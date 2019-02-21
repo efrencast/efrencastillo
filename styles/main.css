@@ -1,0 +1,244 @@
+/* //////////////////////////////////////////////// global controls */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+.wrapper {
+  display: grid;
+  grid-auto-rows: auto;
+  grid-gap: 6rem;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* //////////////////////////////////////////////// navigation */
+
+.navigation {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  padding: 0px 2rem;
+}
+
+.navigation ul {
+  align-items: center;
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: space-between;
+}
+
+.navigation a {
+  color: #073443;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+
+
+/* //////////////////////////////////////////////// hero */
+
+.hero {
+  padding: 0px 2rem;
+}
+
+.hero h5 {
+  text-transform: uppercase;
+  font-size: 3.3rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #213942;
+  letter-spacing: 0.5rem;
+}
+
+h1 {
+  font-size: 7rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #213942;
+  margin-bottom: 3.5rem;
+  margin-top: 1.5rem;
+  line-height: 7.5rem;
+}
+
+.hero h2 {
+  font-size: 3.2rem;
+  font-family: 'Museo sans', sans-serif;
+  line-height: 4.6rem;
+  font-weight: 300;
+}
+
+.hero strong {
+  color: #213942;
+  font-weight: 900;
+}
+
+.hero h3 {
+  font-size: 4.5rem;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  line-height: 5rem;
+  font-weight: bold;
+  color: #213942;
+  padding-top: 5rem;
+  text-align: center;
+}
+
+.hero p {
+  font-size: 2.2rem;
+  font-family: 'Museo sans', sans-serif;
+  line-height: 4.6rem;
+  font-weight: 200;
+  text-align: center;
+  line-height: 3rem;
+  padding-top: 1rem;
+}
+
+/* //////////////////////////////////////////////// projects */
+
+.project {
+  background-color: #7FAACA;
+  padding: 2rem;
+}
+
+.project-2 {
+  background-color: #A05E8B;
+}
+
+.project img {
+  /* display: block;
+  margin: auto; */
+  margin-left: 2rem;
+}
+
+.project h4 {
+  font-family: 'Museo sans', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 100;
+  padding-left: 2rem;
+  padding-top: 2rem;
+  color: #ffffff;
+}
+
+.project h5 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 4rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.project p {
+  font-family: 'Museo sans', sans-serif;
+  font-weight: 100;
+  font-size: 2.2rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  color: #ffffff;
+  line-height: 2.9rem;
+}
+
+button {
+  background-color: #EFBF4E;;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #213942;
+  text-decoration: none;
+  border: none;
+  padding: 1rem 2rem;
+}
+/* //////////////////////////////////////////////// process */
+
+.process {
+  padding: 0px 2rem;
+}
+
+.process h3 {
+  font-size: 4.5rem;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  line-height: 6rem;
+  font-weight: bold;
+  color: #213942;
+}
+
+.process p {
+  font-size: 2.5rem;
+  font-family: 'Museo sans', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 3.5rem;
+}
+
+/* //////////////////////////////////////////////// footer */
+
+footer {
+  background-color: #03241F;
+  padding: 0px 2rem;
+  padding-bottom: 5rem;
+}
+
+footer h3 {
+  font-size: 4.5rem;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  line-height: 6rem;
+  font-weight: bold;
+  color: #ffffff;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+footer p {
+  font-size: 1.3rem;
+  font-family: 'Museo sans', sans-serif;
+  line-height: 4.6rem;
+  font-weight: 300;
+  line-height: 3rem;
+  color: #ffffff;
+  padding-top: 3rem;
+}
+
+footer ul {
+  align-items: center;
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: space-between;
+}
+
+footer li {
+  display: inline;
+}
+
+.svg {
+  filter: invert(94%) sepia(100%) saturate(0%) hue-rotate(267deg) brightness(107%) contrast(107%);
+}
+
+/* media queries */
+
+@media screen and (min-width: 768px) {
+.wrapper {
+  width: 768px;
+  background-color: teal;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+.wrapper {
+  width: 1250px;
+  background-color: pink;
+  }
+}

@@ -4,62 +4,80 @@
     <meta charset="utf-8">
     <meta name="author" content="Efren Castillo">
     <meta name="description" content="This is the porfolio of Efren Castillo">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Efren Castillo | UX/Visual Designer</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="https://use.typekit.net/cjj3uyq.css">
   </head>
   <body>
-    <!-- navigation -->
-    <nav>
-      <img src="./media/images/logo.svg" alt="Efren Castillo Personal Logo" />
-      <ul>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <!-- hero -->
-    <section>
-      <h1><span>Hi there!</span> I'm Efren Castillo</h1>
-      <h2>New York City-based UX and Visual Designer. Turning challenges
-        into research-based solutions wrapped in empathy for the user.</h2>
-        <img src="./media/images/arrow.svg" alt="Click this arrow to see my latest projects" />
-        <h3>Latest Projects</h3>
-        <p>Here are some of the latest projects I’ve been working on.</p>
-    </section>
-    <!-- project 1 -->
-    <section>
-      <h4>UX | UI | Branding</h4>
-      <img src="./media/images/cloudspring-laptop.jpg" alt="View of cloudspring on a laptop" />
-      <p>Cloud-based file storage and organization tool that facilitates the user to create and collaborate seamlessly.</p>
-      <button type="button" name="button">Read Case Study</button>
-    </section>
-    <!-- project 2 -->
-    <section>
-      <h4>Javascript | JQuery |HTML/CSS</h4>
-      <img src="./media/images/bloc-jams-interface.jpg" alt="View of Bloc Jams interface" />
-      <p>A starter project for Bloc's jQuery-driven music player app</p>
-      <button type="button" name="button">View Website</button>
-    </section>
-    <!-- my process -->
-    <section>
-      <h3>My Process</h3>
-      <p>Whenever I start a project, and particularly when I approach the design part of it,
-      I always ask myself: “How can I design this interface in a way that is easy to use?”
-      My process includes time to think about usability and how the end-user would interact
-      with the product being designed.</p>
-    </section>
-    <!-- footer -->
-    <footer>
-      <h3>Let's Talk</h3>
-      <ul>
-        <li><img src="./media/images/linkedin.svg" width="20px" alt="Connect with me via LinkedIn" /></li>
-        <li><img src="./media/images/pinterest.svg" width="20px" alt="Connect with me via pinterest" /></li>
-        <li><img src="./media/images/twitter.svg" width="20px" alt="Connect with me via Twitter" /></li>
-        <li><img src="./media/images/Facebook.svg" width="20px" alt="Connect with me via Facebook" /></li>
-        <li><img src="./media/images/instagram.svg" width="20px" alt="Connect with me via Instagram" /></li>
-      </ul>
-      <p>2019. Designed and hand coded by Efren Castillo</p>
-    </footer>
+      <!-- wrapper -->
+    <div class="wrapper">
+
+      <!-- navigation -->
+      <nav class="navigation">
+        <img src="./media/images/logo.svg" alt="Efren Castillo Personal Logo" />
+        <ul>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- hero -->
+      <section class="hero">
+        <h5>Hi there!</h5>
+        <h1>I'm Efren Castillo</h1>
+        <h2>New York City-based UX and Visual Designer. Turning challenges
+          into <strong>research-based</strong> solutions wrapped in <strong>empathy for the user.</strong></h2>
+          <!-- <img src="./media/images/arrow.svg" alt="Click this arrow to see my latest projects" /> -->
+          <h3>Latest Projects</h3>
+          <p>Here are some of the latest projects I’ve been working on.</p>
+      </section>
+
+      <!-- projects -->
+      <section class="project">
+        <img src="./media/images/dashboard-laptop.gif" width="337px" height="210px" alt="View of cloudspring on a laptop" />
+        <h4>UX | UI | Branding</h4>
+        <h5>Cloudspring</h5>
+        <p>Cloud-based file storage and organization tool that facilitates the user to create and collaborate seamlessly.</p>
+        <button type="button" name="button">Read Case Study</button>
+      </section>
+
+      <!-- projects -->
+      <section class="project project-2">
+        <img src="./media/images/bloc-jams-interface.jpg" width="300px" height="260px" alt="View of Bloc Jams interface" />
+        <h4>Javascript | JQuery |HTML/CSS</h4>
+        <h5>Bloc Jams</h5>
+        <p>A starter project for Bloc's jQuery-driven music player app</p>
+        <button type="button" name="button">View Website</button>
+      </section>
+
+      <!-- process -->
+      <section class="process">
+        <h3>My Process</h3>
+        <p>Whenever I start a project, and particularly when I approach the design part of it,
+        I always ask myself: “How can I design this interface in a way that is easy to use?”
+        My process includes time to think about usability and how the end-user would interact
+        with the product being designed.</p>
+      </section>
+
+      <!-- footer -->
+      <footer>
+        <!-- <p>Back to top</p> -->
+        <p>Back to top</p>
+        <h3>Let's Talk</h3>
+        <ul>
+          <li><img src="./media/images/linkedin.svg" width="40px" alt="Connect with me via LinkedIn" class="svg"/></li>
+          <li><img src="./media/images/pinterest.svg" width="40px" alt="Connect with me via pinterest" class="svg"/></li>
+          <li><img src="./media/images/twitter.svg" width="40px" alt="Connect with me via Twitter" class="svg"/></li>
+          <li><img src="./media/images/Facebook.svg" width="40px" alt="Connect with me via Facebook" class="svg"/></li>
+          <li><img src="./media/images/instagram.svg" width="40px" alt="Connect with me via Instagram" class="svg"/></li>
+        </ul>
+        <p>2019. Designed and hand coded by Efren Castillo</p>
+      </footer>
+    </div>
   </body>
 </html>
