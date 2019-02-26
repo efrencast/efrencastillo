@@ -1,0 +1,638 @@
+/* //////////////////////////////////////////////// global controls */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 35px auto 35px;
+  grid-auto-rows: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* navigation */
+
+.navigation {
+  display: grid;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-template-columns: 35px auto 35px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #03241F;
+}
+
+.navigation img {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.navigation ul {
+  align-items: center;
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: space-around;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.navigation a {
+  color: white;
+  font-family: 'Museo sans', sans-serif;
+  font-weight: 700;
+}
+
+/* project styles */
+
+.project-intro {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-color: #073443;
+}
+
+.project-intro h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 45px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.project-intro p {
+  font-family: 'museo sans', sans-serif;
+  font-size: 23px;
+  font-weight: 300;
+  line-height: 33px;
+}
+
+button {
+  background-color: #EFBF4E;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #213942;
+  text-decoration: none;
+  border: none;
+  padding: 0.5rem 0rem;
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+
+
+
+
+.summary {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.summary h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 45px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.summary h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.summary p {
+  font-family: 'museo sans', sans-serif;
+  font-size: 23px;
+  font-weight: 300;
+  line-height: 33px;
+}
+
+
+
+
+
+
+.process {
+  background-color: #D0DEE8;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.process h2 {
+  font-family: Poppins, sans-serif;
+  font-size: 45px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.process h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.process p {
+  font-family: 'museo sans', sans-serif;
+  font-size: 23px;
+  font-weight: 300;
+  line-height: 33px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.brief {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.brief h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.brief p {
+  font-family: 'museo sans', sans-serif;
+  font-size: 23px;
+  font-weight: 300;
+  line-height: 33px;
+}
+
+.brief li {
+  font-family: 'museo sans', sans-serif;
+  font-size: 23px;
+  font-weight: 300;
+  line-height: 33px;
+}
+
+.brief_takeaways {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.brief_takeaways h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+.research {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.research h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.research_takeaways {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.research p {
+  font-family: 'museo sans', sans-serif;
+  font-size: 23px;
+  font-weight: 300;
+  line-height: 33px;
+}
+
+.research h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.research_takeaways p {
+  font-family: 'museo sans', sans-serif;
+  font-size: 23px;
+  font-weight: 300;
+  line-height: 33px;
+}
+
+
+
+
+
+
+
+.competitive-analysis {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.competitive-analysis h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.competitive-analysis_takeaways {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.competitive-analysis p {
+  font-family: 'museo sans', sans-serif;
+  font-size: 23px;
+  font-weight: 300;
+  line-height: 33px;
+}
+
+
+
+
+
+
+
+.personas {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.personas h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.personas p {
+  font-family: 'museo sans', sans-serif;
+  font-size: 23px;
+  font-weight: 300;
+  line-height: 33px;
+}
+
+
+
+
+
+
+
+
+.stories {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.stories h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.stories p {
+  font-family: 'museo sans', sans-serif;
+  font-size: 23px;
+  font-weight: 300;
+  line-height: 33px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.user-flows {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.user-flows h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.user-flows p {
+  font-family: 'museo sans', sans-serif;
+  font-size: 23px;
+  font-weight: 300;
+  line-height: 33px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.wireframes {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.wireframes h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.wireframes p {
+  font-family: 'museo sans', sans-serif;
+  font-size: 23px;
+  font-weight: 300;
+  line-height: 33px;
+}
+
+.wireframes h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+.hi-fi-prototype {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.hi-fi-prototype h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.hi-fi-prototype p {
+  font-family: 'museo sans', sans-serif;
+  font-size: 23px;
+  font-weight: 300;
+  line-height: 33px;
+}
+
+.hi-fi-prototype h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.branding {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+
+.branding h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.branding p {
+  font-family: 'museo sans', sans-serif;
+  font-size: 23px;
+  font-weight: 300;
+  line-height: 33px;
+}
+
+.branding h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.preference {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.preference h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.preference p {
+  font-family: 'museo sans', sans-serif;
+  font-size: 23px;
+  font-weight: 300;
+  line-height: 33px;
+}
+
+.preference h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.highlights {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.highlights h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.highlights p {
+  font-family: 'museo sans', sans-serif;
+  font-size: 23px;
+  font-weight: 300;
+  line-height: 33px;
+}
+
+.highlights h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.learnt {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.learnt h2 {
+  font-family: Poppins, sans-serif;
+  font-size: 45px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+.learnt p {
+  font-family: 'museo sans', sans-serif;
+  font-size: 23px;
+  font-weight: 300;
+  line-height: 33px;
+}
+
+
+
+
+
+/* footer */
+
+footer {
+  display: grid;
+  grid-template-columns: 35px auto 35px;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  background-color: #03241F;
+  /* padding-bottom: 5rem; */
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+footer h3 {
+  font-size: 4.5rem;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ffffff;
+  grid-column-start: 2;
+  grid-column-end: -1;
+}
+
+footer p {
+  font-size: 1.3rem;
+  font-family: 'Museo sans', sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  grid-column-start: 2;
+  grid-column-end: -1;
+}
+
+footer ul {
+  align-self: center;
+  font-size: 1.5rem;
+  grid-column-start: 2;
+  grid-column-end: -1;
+}
+
+footer li {
+  display: inline;
+  margin-left: 10px;
+}
+
+.svg {
+  filter: invert(94%) sepia(100%) saturate(0%) hue-rotate(267deg) brightness(107%) contrast(107%);
+}

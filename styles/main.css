@@ -15,10 +15,10 @@ html {
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-/* //////////////////////////////////////////////// navigation */
+/* navigation */
 
 .navigation {
   display: grid;
@@ -135,10 +135,10 @@ a {
 }
 
 .project img {
-  /* display: block;
-  margin: 0 auto; */
+  place-self: center;
+  /* align-self: center; */
   grid-column-start: 2;
-  grid-column-end: -1;
+  /* grid-column-end: -1; */
 }
 
 .project h4 {
@@ -227,7 +227,7 @@ button {
   font-weight: 900;
 }
 
-/* //////////////////////////////////////////////// footer */
+/* footer */
 
 footer {
   display: grid;
