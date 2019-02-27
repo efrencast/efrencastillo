@@ -234,7 +234,6 @@ footer {
   grid-template-columns: 35px auto 35px;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   background-color: #03241F;
-  /* padding-bottom: 5rem; */
   grid-column-start: 1;
   grid-column-end: 4;
 }

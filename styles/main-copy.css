@@ -22,8 +22,8 @@ a {
 
 .navigation {
   display: grid;
-  grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 4;
   grid-template-columns: 35px auto 35px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -53,23 +53,48 @@ a {
 /* project styles */
 
 .project-intro {
-  grid-column-start: 2;
-  grid-column-end: 3;
+  display: grid;
+  grid-template-columns: 35px auto 35px;
+  grid-template-rows: auto;
+  grid-column-start: 1;
+  grid-column-end: 4;
   background-color: #073443;
+  padding-bottom: 50px;
+}
+
+.svg {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(90deg) brightness(108%) contrast(101%);
 }
 
 .project-intro h1 {
+  color: #ffffff;
   font-family: 'Poppins', sans-serif;
   font-size: 45px;
   font-weight: bold;
   text-transform: uppercase;
+  text-align: center;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin-top: 10px;
+}
+
+.project-intro img {
+  margin-top: 10px;
+  place-self: center;
+  grid-column-start: 2;
 }
 
 .project-intro p {
+  color: #ffffff;
   font-family: 'museo sans', sans-serif;
   font-size: 23px;
   font-weight: 300;
   line-height: 33px;
+  text-align: center;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin-top: 10px;
+  margin-bottom: 50px;
 }
 
 button {
@@ -88,9 +113,7 @@ button {
   grid-column-end: 2;
 }
 
-
-
-
+/* summary */
 
 .summary {
   grid-column-start: 2;
@@ -98,35 +121,41 @@ button {
 }
 
 .summary h2 {
+  color: #073443;
   font-family: 'Poppins', sans-serif;
   font-size: 45px;
   font-weight: bold;
   text-transform: uppercase;
+  margin: 50px 0;
 }
 
 .summary h3 {
+  color: #073443;
   font-family: 'Poppins', sans-serif;
   font-size: 32px;
   font-weight: bold;
   text-transform: uppercase;
+  margin: 25px 0;
 }
 
 .summary p {
   font-family: 'museo sans', sans-serif;
-  font-size: 23px;
+  font-size: 22px;
   font-weight: 300;
-  line-height: 33px;
+  line-height: 40px;
+  margin-bottom: 50px;
 }
 
-
-
-
-
+/* process */
 
 .process {
+  display: grid;
   background-color: #D0DEE8;
-  grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-template-columns: 35px auto 35px;
+  grid-template-rows: auto;
+  padding-bottom: 50px;
 }
 
 .process h2 {
@@ -134,6 +163,9 @@ button {
   font-size: 45px;
   font-weight: bold;
   text-transform: uppercase;
+  padding: 25px 0;
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
 
 .process h4 {
@@ -141,6 +173,8 @@ button {
   font-size: 25px;
   font-weight: bold;
   text-transform: uppercase;
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
 
 .process p {
@@ -148,21 +182,27 @@ button {
   font-size: 23px;
   font-weight: 300;
   line-height: 33px;
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
 
+.process img {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  padding: 20px 0;
+}
 
-
-
-
-
-
-
-
-
+/* brief */
 
 .brief {
   grid-column-start: 2;
   grid-column-end: 3;
+}
+
+.brief img {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  padding: 20px 0;
 }
 
 .brief h3 {
@@ -170,12 +210,14 @@ button {
   font-size: 32px;
   font-weight: bold;
   text-transform: uppercase;
+  margin-bottom: 25px;
 }
 
 .brief p {
   font-family: 'museo sans', sans-serif;
   font-size: 23px;
   font-weight: 300;
+  line-height: 33px;
   line-height: 33px;
 }
 
@@ -184,20 +226,44 @@ button {
   font-size: 23px;
   font-weight: 300;
   line-height: 33px;
+  list-style-type: circle;
 }
 
-.brief_takeaways {
-  grid-column-start: 2;
-  grid-column-end: 3;
+/* specifications */
+
+.specifications {
+  display: grid;
+  background-color: #D0DEE8;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-template-columns: 35px auto 35px;
+  grid-template-rows: auto;
+  padding-bottom: 50px;
+  margin-top: 50px;
+
 }
 
-.brief_takeaways h4 {
+.specifications h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 25px;
   font-weight: bold;
   text-transform: uppercase;
+  margin-top: 50px;
+  grid-column-start: 2;
+  grid-column-end: 4;
 }
 
+.specifications ul {
+  font-family: 'museo sans', sans-serif;
+  font-size: 23px;
+  font-weight: 300;
+  line-height: 33px;
+  list-style-type: circle;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  list-style-type: none;
+  line-height: 45px;
+}
 
 
 
