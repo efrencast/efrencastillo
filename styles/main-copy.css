@@ -10,8 +10,8 @@ html {
 
 .wrapper {
   display: grid;
-  grid-template-columns: 35px auto 35px;
-  grid-auto-rows: auto;
+  grid-template-columns: 30px auto 30px;
+  /* grid-auto-rows: auto; */
 }
 
 a {
@@ -55,8 +55,8 @@ a {
 .takeaways {
   display: grid;
   background-color: #D0DEE8;
-  grid-column-start: 1;
-  grid-column-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 3;
   grid-template-columns: 35px auto 35px;
   grid-template-rows: auto;
   padding: 75px 0px;
@@ -701,12 +701,12 @@ button {
   text-transform: uppercase;
 }
 
-.hi-fi-prototype img {
+/* .hi-fi-prototype img {
   grid-column-start: 2;
   grid-column-end: 3;
   padding-bottom: 5px;
   margin-top: 50px;
-}
+} */
 
 .hi-fi-prototype img + p {
   color: #BDBDBD;
@@ -717,13 +717,7 @@ button {
   text-transform: uppercase;
 }
 
-
-
-
-
-
-
-
+/* branding */
 
 .branding {
   display: grid;
@@ -777,39 +771,91 @@ button {
   grid-column-end: 3;
 }
 
+.branding ul + p {
+  color: #BDBDBD;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
 
+.branding aside + p {
+  color: #BDBDBD;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.preference {
+.branding .typography {
+  border: 1px gray solid;
   grid-column-start: 2;
   grid-column-end: 3;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.typography h6 {
+  font-family: 'rubik', sans-serif;
+  font-size: 30px;
+  margin-top: 19px;
+}
+
+.typography p {
+  font-family: 'rubik', sans-serif;
+  font-size: 20px;
+}
+
+.typography li {
+  font-family: 'rubik', sans-serif;
+  font-size: 15px;
+}
+
+/* preference */
+
+.preference {
+  display: grid;
+  grid-template-columns: 35px auto 35px;
+  grid-template-rows: auto;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  margin-top: 50px;
 }
 
 .preference h3 {
   font-family: 'Poppins', sans-serif;
   font-size: 32px;
   font-weight: bold;
+  grid-column-start: 2;
+  grid-column-end: 3;
   text-transform: uppercase;
+}
+
+.preference img {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  padding-bottom: 5px;
+  margin-top: 10px;
 }
 
 .preference p {
   font-family: 'museo sans', sans-serif;
-  font-size: 23px;
+  font-size: 18px;
   font-weight: 300;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  line-height: 33px;
+}
+
+.preference p span {
+  font-family: 'museo sans', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  grid-column-start: 2;
+  grid-column-end: 3;
   line-height: 33px;
 }
 
@@ -817,39 +863,56 @@ button {
   font-family: 'Poppins', sans-serif;
   font-size: 25px;
   font-weight: bold;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin-top: 35px;
   text-transform: uppercase;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* highlights */
 
 .highlights {
+  display: grid;
+  grid-template-columns: 35px auto 35px;
+  grid-template-rows: auto;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  margin-top: 50px;
+}
+
+.highlights img {
   grid-column-start: 2;
   grid-column-end: 3;
+  padding-bottom: 5px;
+  margin-top: 10px;
 }
 
 .highlights h3 {
   font-family: 'Poppins', sans-serif;
   font-size: 32px;
   font-weight: bold;
+  grid-column-start: 2;
+  grid-column-end: 3;
   text-transform: uppercase;
+}
+
+.highlights ul {
+  font-family: 'museo sans', sans-serif;
+  font-size: 23px;
+  font-weight: 300;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  line-height: 35px;
+  list-style-type: disc;
+  margin-left: 20px;
 }
 
 .highlights p {
   font-family: 'museo sans', sans-serif;
   font-size: 23px;
   font-weight: 300;
+  grid-column-start: 2;
+  grid-column-end: 3;
   line-height: 33px;
 }
 
@@ -857,44 +920,39 @@ button {
   font-family: 'Poppins', sans-serif;
   font-size: 25px;
   font-weight: bold;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin-top: 35px;
   text-transform: uppercase;
 }
 
+/* reflexions */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.learnt {
-  grid-column-start: 2;
-  grid-column-end: 3;
+.reflexions {
+  background-color: #D0DEE8;
+  display: grid;
+  grid-template-columns: 35px auto 35px;
+  grid-template-rows: auto;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  padding: 50px 0;
+  margin-top: 20px;
 }
 
-.learnt h2 {
+.reflexions h2 {
   font-family: Poppins, sans-serif;
   font-size: 45px;
   font-weight: bold;
+  grid-column-start: 2;
+  grid-column-end: 3;
   text-transform: uppercase;
 }
-
-
-.learnt p {
+.reflexions p {
   font-family: 'museo sans', sans-serif;
   font-size: 23px;
   font-weight: 300;
+  grid-column-start: 2;
+  grid-column-end: 3;
   line-height: 33px;
 }
 
