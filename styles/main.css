@@ -10,7 +10,7 @@ html {
 
 .wrapper {
   display: grid;
-  grid-template-columns: 35px auto 35px;
+  grid-template-columns: 30px auto 30px;
   grid-auto-rows: auto;
 }
 
@@ -21,13 +21,13 @@ a {
 /* navigation */
 
 .navigation {
+  background-color: #ffffff;
   display: grid;
   grid-column-start: 1;
   grid-column-end: 4;
-  grid-template-columns: 35px auto 35px;
+  grid-template-columns: 30px auto 30px;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #03241F;
 }
 
 .navigation img {
@@ -42,10 +42,12 @@ a {
   justify-content: space-around;
   grid-column-start: 2;
   grid-column-end: 3;
+  list-style-type: none;
+  line-height: normal;
 }
 
 .navigation a {
-  color: white;
+  color: #073443;
   font-family: 'Museo sans', sans-serif;
   font-weight: 700;
 }
@@ -121,7 +123,7 @@ a {
 
 .project {
   display: grid;
-  grid-template-columns: 35px auto 35px;
+  grid-template-columns: 30px auto 30px;
   grid-template-rows: auto;
   background-color: #7FAACA;
   grid-column-start: 1;
@@ -231,7 +233,7 @@ button {
 
 footer {
   display: grid;
-  grid-template-columns: 35px auto 35px;
+  grid-template-columns: 30px auto 30px;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   background-color: #03241F;
   grid-column-start: 1;
