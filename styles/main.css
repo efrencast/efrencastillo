@@ -6,6 +6,7 @@
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -183,21 +184,33 @@ a {
   grid-column-end: 2;
 }
 
-button {
+.button {
   background-color: #EFBF4E;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  font-size: 2.5rem;
+  border: 2px solid #EFBF4E;
+  margin: 2rem 0;
+  font-size: 2rem;
   text-transform: uppercase;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   color: #213942;
   text-decoration: none;
-  border: none;
-  padding: 0.5rem 0rem;
+  /* border: none; */
+  padding: 1.5rem 0rem;
+  text-align: center;
   grid-column-start: 2;
   grid-column-end: 2;
+  border-radius: 5px;
+  /* box-shadow: 2px 2px 3px gray; */
+  color: #213942;
+  justify-self: center;
+  width: 220px;
 }
+
+.button:hover {
+  background-color: #ffffff;
+  border: 2px solid #EFBF4E;
+}
+
 /* //////////////////////////////////////////////// process */
 
 .process {
@@ -238,6 +251,10 @@ footer {
   background-color: #03241F;
   grid-column-start: 1;
   grid-column-end: 4;
+}
+
+footer a {
+  color: #ffffff;
 }
 
 footer h3 {

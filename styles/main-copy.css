@@ -6,6 +6,7 @@
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -97,21 +98,78 @@ h3 {
   text-transform: uppercase;
 }
 
-button {
+h4 {
+  color: #073443;
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  text-transform: uppercase;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+/* button {
   background-color: #EFBF4E;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px gray;
+  color: #213942;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  place-self: center stretch;
+  margin: 5rem 0;
+  padding: 1rem 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+} */
+
+.button {
+  background-color: #EFBF4E;
+  border: 2px solid #EFBF4E;
+  margin: 2rem 0;
   font-size: 2rem;
   text-transform: uppercase;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   color: #213942;
   text-decoration: none;
-  border: none;
-  padding: 0.5rem 2rem;
+  /* border: none; */
+  padding: 1.5rem 0rem;
+  text-align: center;
   grid-column-start: 2;
-  grid-column-end: 2;
+  grid-column-end: 3;
+  border-radius: 5px;
+  /* box-shadow: 2px 2px 3px gray; */
+  color: #213942;
+  justify-self: center;
+  width: 220px;
 }
+
+.button:hover {
+  background-color: #ffffff;
+  border: 2px solid #EFBF4E;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .wireframes img + p {
   color: #828282;
@@ -151,7 +209,7 @@ button {
 .hero h1 {
   color: #ffffff;
   font-family: 'Poppins', sans-serif;
-  font-size: 45px;
+  font-size: 40px;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
@@ -277,18 +335,6 @@ p {
   padding-bottom: 50px;
 }
 
-h4 {
-  color: #073443;
-  font-family: 'Poppins', sans-serif;
-  font-size: 25px;
-  font-weight: bold;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  text-transform: uppercase;
-  padding-top: 50px;
-  padding-bottom: 10px;
-}
-
 ul {
   font-family: 'museo sans', sans-serif;
   font-size: 23px;
@@ -316,16 +362,6 @@ ul {
   padding-bottom: 5px;
 }
 
-/* h4 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 25px;
-  font-weight: bold;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  line-height: 30px;
-  text-transform: uppercase;
-} */
-
 .percentages {
   background-color: #D0DEE8;
   display: grid;
@@ -335,6 +371,11 @@ ul {
   grid-column-start: 1;
   grid-column-end: 4;
   padding: 20px 0px;
+  margin-top: 20px;
+}
+
+.research strong {
+  font-weight: bold;
 }
 
 .percentages span {
@@ -435,10 +476,46 @@ em {
   padding-bottom: 5px;
 }
 
-.stories table {
+table {
+  font-family: 'museo sans', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  margin: 20px 0;
   grid-column-start: 2;
   grid-column-end: 3;
-  background-color: firebrick;
+  height: 460px;
+  overflow: scroll;
+}
+
+.table-wrapper {
+  width: 310px;
+  height: 500px;
+  overflow:auto;
+}
+
+td {
+  height: 10px;
+  vertical-align: middle;
+}
+
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  text-align: center;
+}
+
+th {
+  background-color: #073443;
+  color: white;
+  font-family: 'museo sans', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #D0DEE8;
 }
 
 /* user flows */
@@ -453,15 +530,6 @@ em {
   padding-bottom: 5px;
 }
 
-/* .user-flows p {
-  font-family: 'museo sans', sans-serif;
-  font-size: 23px;
-  font-weight: 300;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  line-height: 33px;
-} */
-
 /* wireframes design and testing*/
 
 .wireframes {
@@ -471,7 +539,11 @@ em {
 }
 
 .wireframes img {
-  padding-top: 20px;
+  padding-top: 70px;
+}
+
+.wireframes h4 {
+  padding-top: 10px;
 }
 
 /* high fidelity prototype */
@@ -485,6 +557,11 @@ em {
 .hi-fi-prototype img {
   grid-column-start: 2;
   grid-column-end: 3;
+  padding-top: 70px;
+}
+
+.hi-fi-prototype h4 {
+  padding-top: 10px;
 }
 
 /* branding */
@@ -577,6 +654,11 @@ ul + p {
 .highlights img {
   grid-column-start: 2;
   grid-column-end: 3;
+  padding-top: 70px;
+}
+
+.highlights h4 {
+  padding-top: 10px;
 }
 
 /* reflexions */
@@ -610,6 +692,10 @@ footer {
   grid-column-start: 1;
   grid-column-end: 4;
   padding-bottom: 80px;
+}
+
+footer a {
+  color: #ffffff;
 }
 
 footer p {
