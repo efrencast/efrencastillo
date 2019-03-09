@@ -155,7 +155,60 @@ h4 {
   border: 2px solid #EFBF4E;
 }
 
+.wireframes .button {
+  display: block;
+  background-color: #EFBF4E;
+  border: 2px solid #EFBF4E;
+  margin: 4.5rem auto;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #213942;
+  text-decoration: none;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  border-radius: 5px;
+  color: #213942;
+  width: 220px;
+}
 
+.wireframes .button:hover {
+  background-color: #ffffff;
+  border: 2px solid #EFBF4E;
+}
+
+.branding .button {
+  display: block;
+  background-color: #EFBF4E;
+  border: 2px solid #EFBF4E;
+  margin: 4rem auto;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #213942;
+  text-decoration: none;
+  padding: 1rem 1rem;
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  border-radius: 5px;
+  color: #213942;
+  width: 220px;
+}
+
+.branding .button:hover {
+  background-color: #ffffff;
+  border: 2px solid #EFBF4E;
+}
+
+hr {
+  margin: 30px;
+  color: #073443;
+}
 
 
 
@@ -220,13 +273,12 @@ h4 {
 .hero p {
   color: #ffffff;
   font-family: 'museo sans', sans-serif;
-  font-size: 23px;
+  font-size: 20px;
   font-weight: 300;
-  line-height: 33px;
+  line-height: 25px;
   text-align: center;
   grid-column-start: 2;
   grid-column-end: 3;
-  margin: 10px 0;
 }
 .svg {
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(90deg) brightness(108%) contrast(101%);
