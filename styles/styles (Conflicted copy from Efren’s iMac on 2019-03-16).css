@@ -1,0 +1,492 @@
+/* global controls */
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+/* typography */
+
+p {
+  color: #213942;
+  font-family: 'Museo Sans', sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+}
+
+.project p {
+  color: #ffffff;
+}
+
+footer p, footer a {
+  color: #ffffff; /* white */
+  font-size: 14px;
+}
+
+.wireframes img + p, .high-prototype img + p, .remote-test img + p {
+  color: #AEAEAE;
+  font-size: 12px;
+  text-align: center;
+}
+
+h1 {
+  color: #213942;
+  font-family: 'Poppins', sans-serif;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 75px;
+}
+
+h2 {
+  color: #FFFFFF;
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.summary h2, .what-learned h2, .process h2 {
+  color: #073443;
+  margin-bottom: 20px;
+}
+
+.banner h2 {
+  color: #ffffff;
+}
+
+.my-process h2 {
+  color: #073443;
+}
+
+footer h2 {
+  margin: 30px 0;
+}
+
+h3 {
+  color: #213942;
+  font-family: 'Poppins', sans-serif;
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.takeaways h3 {
+  color: #000000;
+}
+
+.summary p + h3  {
+  margin-top: 20px;
+}
+
+.see-more h3, .see-more p {
+  text-align: center;
+}
+
+.banner-cloudspring p {
+  text-align: center;
+  color: #ffffff;
+}
+
+h4 {
+  color: #073443;
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+
+.wireframes-changes h4, .high-prototype-changes h4 {
+  line-height: 30px;
+}
+
+.branding h4 {
+  line-height: normal;
+  color: #073443;
+  margin-top: 50px;
+}
+
+.preference-test h4 {
+  margin-top: 50px;
+}
+
+.margin-fix {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.margin-fix:nth-of-type(1) {
+  margin: 0px 0px;
+}
+
+h5 {
+
+}
+
+h6 {
+  color: #FFFFFF;
+  font-family: 'Museo Sans', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.nav-links a {
+color: #03241F;
+font-family: 'Museo Sans', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+text-transform: uppercase;
+}
+
+ul li {
+  font-family: 'Museo Sans', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 40px;
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+em {
+  color: #796423;
+  display: block;
+  font-family: 'Museo Sans', sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 20px;
+  margin: 10px 0;
+}
+
+strong {
+  font-weight: 500;
+}
+
+hr {
+  border: 3px solid #D0DEE8;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 90%;
+}
+
+/* buttons */
+
+.button {
+  display: flex;
+  background-color: #EFBF4E; /* yellow */
+  border-radius: 4px;
+  color: #213942;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  justify-content: center;
+  padding: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 50px 40px;
+  transition-duration: 0.5s;
+}
+
+.button:hover {
+  background-color: #213942;
+  color: white;
+}
+
+.banner-cloudspring .button:hover {
+  background-color: #ffffff;
+  color: #213942;
+}
+
+/* a:link {
+  color: #073443;
+*/
+
+a:visited {
+  color: #073443;
+}
+
+a:hover {
+  color: #EFBF4E;
+  /* text-decoration: underline; */
+  transition-duration: 0.2s;
+}
+
+a:active {
+  color: #EFBF4E;
+}
+
+/* images */
+
+img {
+  width: 100%;
+}
+
+.see-more img {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  width: 15%;
+}
+
+.project img {
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+
+.banner-cloudspring img:nth-of-type(2) {
+  display: block;
+  margin: 0 auto;
+  width: 75%;
+  margin-top: 20px;
+}
+
+.icon-process {
+  width: 15%;
+}
+
+.process ul ~ img {
+  width: 15%;
+  margin-top: 20px;
+}
+
+.competitors-logo {
+  display: block;
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-bottom: 5px;
+}
+
+.wireframes img, .high-prototype img, .remote-test img, .product-highlights img{
+  margin-top: 50px;
+}
+
+.wireframes-changes img, .high-prototype-changes img {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+footer img {
+  width: 50%;
+}
+
+/* navigation */
+
+.navigation {
+  align-items: center;
+  border-bottom: 1px #03241F solid;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+}
+
+.navigation li {
+  display: inline;
+  margin-left: 15px;
+}
+
+/* homepage sections */
+
+.banner {
+  padding-top: 50px;
+  /* height: 100vh; */
+}
+
+.my-process {
+  padding: 50px 0;
+}
+
+.see-more {
+  margin: 50px 0;
+}
+
+.project {
+  background-color: #7FAACA;
+  padding: 50px 0;
+}
+
+.project-secondary {
+  background-color: #A05E8B;
+}
+
+/* project: cloudspring sections */
+
+.banner-cloudspring {
+  background-color: #073443;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  padding-top: 50px;
+}
+
+.process, .specifications, .percentages, .takeaways, .what-learned {
+  background-color: #D0DEE8; /* light blue */
+  margin: 50px 0;
+  padding: 50px 0;
+}
+
+/* footer */
+
+footer {
+  background-color: #03241F;
+}
+
+footer ul {
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 80px;
+  margin-bottom: 20px;
+}
+
+footer li {
+  list-style-type: none;
+}
+
+footer ul li {
+  margin-left: 1px;
+}
+
+footer img {
+  filter: invert(94%) sepia(100%) saturate(0%) hue-rotate(267deg) brightness(107%) contrast(107%);
+}
+
+/* grids */
+
+
+/* grid-1 */
+
+.grid-1 {
+  display: grid;
+  grid-template-columns: 10px auto 10px;
+  grid-template-rows: auto;
+}
+
+.banner h3, .banner h1, .banner p  {
+  grid-column-start: 2;
+}
+
+.see-more img, .see-more h3, .see-more p {
+  grid-column-start: 2;
+}
+
+.project img, .project h6, .project h2, .project p, .project a {
+  grid-column-start: 2;
+}
+
+.project img, .project h6, .project h2, .project p, .project a {
+  grid-column-start: 2;
+}
+
+.my-process h2, .my-process p {
+  grid-column-start: 2;
+}
+
+footer p, footer h2, footer ul {
+  grid-column-start: 2;
+}
+
+/* //////////// */
+
+.grid-projects {
+  display: grid;
+  grid-template-columns: 10px auto 10px;
+  grid-template-rows: auto;
+}
+
+.summary h2, .summary h3, .summary p {
+  grid-column-start: 2;
+}
+
+/* //////////// */
+
+.grid-process {
+  display: grid;
+  grid-template-columns: 10px auto 10px;
+  grid-template-rows: auto;
+}
+
+.process h2, .process img, .process h4, .process ul {
+  grid-column-start: 2;
+}
+
+/* //////////// */
+
+.grid-brief {
+  display: grid;
+  grid-template-columns: 10px auto 10px;
+  grid-template-rows: auto;
+}
+
+.grid-brief img, .grid-brief h3, .grid-brief p, .grid-brief ul {
+  grid-column-start: 2;
+}
+
+/* //////////// */
+
+/* .grid-specifications {
+  display: grid;
+  grid-template-columns: 10px auto 10px;
+  grid-template-rows: auto;
+}
+
+.grid-specifications h4, .grid-specifications ul, {
+  grid-column-start: 2;
+} */
+
+/* //////////// */
+
+.grid-research {
+  display: grid;
+  grid-template-columns: 10px auto 10px;
+  grid-template-rows: auto;
+}
+
+.grid-research img, .grid-research h3, .grid-research p {
+  grid-column-start: 2;
+}
+
+/* //////////// */
+
+.takeaways {
+  display: grid;
+  grid-template-columns: 10px auto 10px;
+  grid-template-rows: auto;
+}
+
+.takeaways h3, .takeaways p {
+  grid-column-start: 2;
+}
+
+/* //////////// */
+
+.grid-competitive-analysis {
+  display: grid;
+  grid-template-columns: 10px auto 10px;
+  grid-template-rows: auto;
+}
+
+.competitive-analysis img, .competitive-analysis h3, .competitive-analysis p {
+  grid-column-start: 2;
+}

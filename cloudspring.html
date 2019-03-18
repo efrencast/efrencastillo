@@ -5,35 +5,37 @@
     <meta name="author" content="Efren Castillo">
     <meta name="description" content="This is the porfolio of Efren Castillo">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Efren Castillo | UX/Visual Designer</title>
+    <title>Efren Castillo | Product Designer</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="https://use.typekit.net/cjj3uyq.css">
   </head>
   <body id="back-to-top">
     <div class="wrapper">
+
       <nav class="navigation">
-        <ul>
-          <a href="index.html"><li><img src="./media/images/logo.svg" height="25px" width="23px" alt="Efren Castillo Personal Logo" /></li></a>
-          <li><a href="cloudspring.html">Projects</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <!-- <li><a href="contact.html">Contact</a></li> -->
-        </ul>
+        <section class="ec-logo">
+          <a href="index.html"><img src="./media/images/logo.svg" alt="Efren Castillo Personal Logo" /></a>
+        </section>
+        <section class="nav-links">
+          <ul>
+            <li><a href="cloudspring.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <!-- <li><a href="contact.html">Contact</a></li> -->
+          </ul>
+      </section>
       </nav>
 
-      <!-- hero -->
-      <section class="hero">
-        <img src="./media/images/cloudspring-dashboard-laptop-mobile.gif" width="275px" height="180px" alt="View of cloudspring on a laptop" />
-        <img src="./media/images/cloudspring-logo.svg" width="80%" alt="Cloudspring Logo">
+      <section class="banner-cloudspring">
+        <img src="./media/images/cloudspring-laptop.gif" alt="View of cloudspring on a laptop" />
+        <img src="./media/images/cloudspring-logo.svg" alt="Cloudspring Logo">
         <p>Cloud-based file storage and organization tool that facilitates the user to create and collaborate seamlessly.</p>
-        <!-- <button type="button" name="button">View Prototype</button> -->
         <a href="#" class="button">View Prototype</a>
       </section>
 
-      <!-- summary -->
-      <section class="summary">
+      <section class="summary grid-projects">
         <h2>Summary</h2>
         <h3>The Challenge</h3>
         <p>The client wanted a cloud storage and organization application. Even though there are other well-known companies in this field, the goal was to focus on the user having an <strong>easier interaction when saving, creating, and sharing any kind of content.</strong> By doing this, the client believed that a space can open up for this new application. <strong>Identifying the target audience</strong> was needed for this project, and also developing an <strong>identity for the brand.</strong></p>
@@ -41,24 +43,23 @@
         <p>Upon receiving the project and asking follow-up questions to the client, my starting point was to conduct a research to get to know potential users, then progressing to design, and finally zero in on testing, to make sure that the solution will satisfy the end-user. The final solution was an <strong>intuitive and easy-to-use app with a modern and minimalist design that invites the user to use it effortlessly.</strong> It also filled all the requirements set forth by the client.</p>
       </section>
 
-      <!-- process -->
-      <section class="process">
+      <section class="process grid-process">
         <h2>Process</h2>
-        <img src="./media/images/project-discovery.svg" width="15%" alt="Project Discovery">
+        <img src="./media/images/project-discovery.svg" class="icon-process" alt="Project Discovery">
         <h4>Project Discovery</h4>
         <ul>
           <li>Project brief</li>
           <li>Technical specifications</li>
           <li>Timeline</li>
         </ul>
-        <img src="./media/images/strategy.svg" width="15%" alt="Strategy">
+        <img src="./media/images/strategy.svg" class="icon-process" alt="Strategy">
         <h4>Strategy</h4>
         <ul>
           <li>User research</li>
           <li>Competitive analysis</li>
           <li>Personas</li>
         </ul>
-        <img src="./media/images/information-architecture.svg" width="15%" alt="Information Architecture">
+        <img src="./media/images/information-architecture.svg" class="icon-process" alt="Information Architecture">
         <h4>Information Architecture</h4>
         <ul>
           <li>User stories</li>
@@ -67,7 +68,7 @@
           <li>Prototypes</li>
           <li>Usability test</li>
         </ul>
-        <img src="./media/images/visual-design.svg" width="15%" alt="Visual Design">
+        <img src="./media/images/visual-design.svg" class="icon-process" alt="Visual Design">
         <h4>Visual Design</h4>
         <ul>
           <li>Sketches</li>
@@ -79,13 +80,11 @@
         </ul>
       </section>
 
-      <!-- brief -->
-      <section class="brief">
-        <img src="./media/images/project-discovery.svg" width="15%" alt="Project Discovery">
+      <section class="brief grid-brief">
+        <img src="./media/images/project-discovery.svg" class="icon-process" alt="Project Discovery">
         <!-- <h5>Project Discovery</h5> -->
         <h3>Project Brief</h3>
         <p>This, being a new app in the market, the client wanted to <strong>make an impact in the productivity of the would-be users.</strong> She requested that the app should as <strong>MVP at the time of launch:</strong></p>
-        </br >
         <ul>
           <li>Save content found on the web (links, images, videos, etc.)</li>
           <li>Organize content using categories, tags, groups, and/or folders.</li>
@@ -97,16 +96,15 @@
         </ul>
       </section>
 
-      <!-- specifications -->
-      <section class="specifications">
-        <h4>Roles</h4>
+      <section class="specifications grid-specifications">
+        <h4 class="margin-fix">Roles</h4>
         <ul>
           <li>Researcher</li>
           <li>Content Producer</li>
           <li>Usability Tester</li>
           <li>Visual Designer</li>
         </ul>
-        <h4>Deliverables</h4>
+        <h4 class="margin-fix">Deliverables</h4>
         <ul>
           <li>Competitive Analysis</li>
           <li>User Personas</li>
@@ -117,7 +115,7 @@
           <li>User Testing</li>
           <li>Prototypes</li>
         </ul>
-        <h4>Tools Used</h4>
+        <h4 class="margin-fix">Tools Used</h4>
         <ul>
           <li>Google Forms</li>
           <li>Google Docs</li>
@@ -129,75 +127,66 @@
           <li>Maze</li>
           <li>UsabilityHub</li>
         </ul>
-        <h4>Duration</h4>
+        <h4 class="margin-fix">Duration</h4>
         <ul>
           <li>3 months</li>
         </ul>
       </section>
 
-      <!-- research -->
-      <section class="research">
-        <img src="./media/images/strategy.svg" width="15%" alt="Strategy">
+      <section class="research grid-research">
+        <img src="./media/images/strategy.svg" class="icon-process" alt="Strategy">
         <!-- <h5>Strategy</h5> -->
         <h3>Research</h3>
         <p>To get to know the user, <strong>I used a survey</strong> as a method to do the primary user research. My main focus was to <strong>know the user’s priorities</strong> when using a storage service, as well as <strong>features they like or dislike,</strong> and how this web app could <strong>help them in their everyday life.</strong></p>
         <p><strong>These were some of the findings:</strong></p>
-        <!-- aside -->
-        <aside class="percentages">
-          <p><span>51%</span> Use for personal or professional reasons.</p>
-          <p class="right"><span>52%</span> Create documents and spreadsheets.</p>
-          <p><span>100%</span> Collaborate by sharing a link.</p>
-          <p class="right"><span>38%</span> Organize content by categories, tags or folders.</p>
-          <p><span>71%</span> Collaborate with families or co-workers.</p>
-          <p class="right"><span>71%</span> Upload and stores videos or files.</p>
-        </aside>
-        <!-- <button type="button" name="button">View Survey and Analysis</button> -->
-        <a href="#" class="button">View Survey and Analysis</a>
-
-        <!-- takeaways -->
-
       </section>
+
+      <section class="percentages">
+        <p><span>51%</span> Use for personal or professional reasons.</p>
+        <p class="right"><span>52%</span> Create documents and spreadsheets.</p>
+        <p><span>100%</span> Collaborate by sharing a link.</p>
+        <p class="right"><span>38%</span> Organize content by categories, tags or folders.</p>
+        <p><span>71%</span> Collaborate with families or co-workers.</p>
+        <p class="right"><span>71%</span> Upload and stores videos or files.</p>
+      </section>
+
+      <a href="#" class="button">Survey and Analysis</a>
+
       <section class="takeaways">
         <h3>Takeaways</h3>
         <p>At the end of this research, I discovered that the potential user was someone that was <strong>experienced in using a cloud application.</strong> I also learned that the user is a <strong>frequent user</strong> of this kind service to accomplish their needs.</p>
       </section>
 
-      <!-- competitive analysis -->
-      <section class="competitive-analysis">
-          <img src="./media/images/strategy.svg" width="15%" alt="Strategy">
-          <!-- <h5>Strategy</h5> -->
-          <h3>Competitive Analysis</h3>
-          <p>To have a <strong>better understanding of the strength and weaknesses of the competition,</strong> I conducted a competitive analysis. I spent quiet some time here because I wanted to know what made these services so popular, besdies their name reconigtion. These three competitors were analyzed:</p>
-        <!-- google drive -->
-        <img src="./media/images/google-drive-logo.jpg" alt="Google Drive Logo">
+      <section class="competitive-analysis grid-competitive-analysis">
+        <img src="./media/images/strategy.svg" class="icon-process" alt="Strategy">
+        <!-- <h5>Strategy</h5> -->
+        <h3>Competitive Analysis</h3>
+        <p>To have a <strong>better understanding of the strength and weaknesses of the competition,</strong> I conducted a competitive analysis. I spent quiet some time here because I wanted to know what made these services so popular, besdies their name reconigtion. These three competitors were analyzed:</p>
+
+        <img src="./media/images/google-drive-logo.jpg" class="icon-process competitors-logo" alt="Google Drive Logo">
         <p><strong>Google Drive</strong> integrates all their services into the cloud app, but because of the amount of those services, <strong>users can get easily confused.</strong> One of the advantages that was discovered was how <strong>easy is to find any file and how easy was to collaborate.</strong></p>
-        <!-- dropbox -->
-        <img src="./media/images/dropbox-logo.svg" alt="Dropbox Logo">
+
+        <img src="./media/images/dropbox-logo.svg" class="icon-process competitors-logo" alt="Dropbox Logo">
         <p><strong>Dropbox</strong> I found to be very easy to use and its integration with the user’s desktop made it a “plus” feature. On the downside, it doesn't have a built-in spreadsheet creator and the <strong>functions are not consistent across devices.</strong></p>
-        <!-- icloud -->
-        <img src="./media/images/icloud-logo.jpg" alt="iCloud Logo">
+
+        <img src="./media/images/icloud-logo.jpg" class="icon-process competitors-logo" alt="iCloud Logo">
         <p><strong>iCloud</strong> has a <strong>robust content organization feature</strong> (folder creation and color tagging), it also has a very integrated documents, presentations and spreadsheet creator. As a minus, the service <strong>is not seems very professional,</strong> since it gives the impression that is geared towards personal use rather than professional.</p>
-        <!-- <a href="#" class="button">Read the Complete Report</a> -->
-        <!-- <button type="button" name="button">Read the Complete Report</button> -->
-
-        <!-- takeaways -->
-
       </section>
+
       <a href="#" class="button">Read Report</a>
+
       <section class="takeaways">
         <h3>Takeaways</h3>
         <p>By analyzing the competition, I could acquired the necessary knowledge of <strong>what regular users experience</strong> when using other applications, as well as what <strong>was missing or what could be enhanced</strong> for the client’s app.</p>
       </section>
 
-      <!-- user personas -->
-      <section class="personas">
-        <img src="./media/images/strategy.svg" width="15%" alt="Strategy">
+      <section class="personas grid-personas">
+        <img src="./media/images/strategy.svg" class="icon-process" alt="Strategy">
         <!-- <h5>Strategy</h5> -->
         <h3>User Personas</h3>
         <p>Upon <strong>analyzing the user survey,</strong> it was time to <strong>bring empathy to this data.</strong> I accomplish this by crafting 3 different user personas.</p>
 
-        <!-- mark abernathy -->
-        <img src="./media/images/mark-abernathy.jpg" width="100%" alt="A picture of user persona Mark Abernathy">
+        <img src="./media/images/mark-abernathy.jpg" class="persona-picture" alt="A picture of user persona Mark Abernathy">
         <em>“I would like to store all my files in one place, access them anywhere and easily find them”</em>
         <h3>Mark Abernathy</h3>
         <p>32 years old<br>
@@ -218,8 +207,7 @@
           <li>Has to keep two accounts for capacity reasons.</li>
         </ul>
 
-        <!-- renee palmer -->
-        <img src="./media/images/renee-palmer.jpg" width="100%" alt="A picture of user persona Renee Palmer">
+        <img src="./media/images/renee-palmer.jpg" class="persona-picture" alt="A picture of user persona Renee Palmer">
         <em>“I need my devices to be easy to use and have all my assignments ready to share with my students”</em>
         <h3>Renée Palmer</h3>
         <p>45 years old<br>
@@ -238,560 +226,169 @@
           <li>Can’t create easily folders.</li>
           <li>Can’t upload and sync fast.</li>
         </ul>
-
       </section>
+
       <a href="#" class="button">View Personas</a>
-      <!-- <button type="button" name="button">See All the Personas</button> -->
 
       <section class="takeaways">
         <h3>Takeaways</h3>
         <p>By creating personas, I could think of them like real users, and throughout the project, and with every decision, I kept asking this question to myself: <strong>‘Would Mark like this feature?”, “Is this flow easy to Paula?”, “How would Renée accomplish this task?”</strong> Keeping these personas in mind helped me always think about the end user in preparation for the testing phase.</p>
       </section>
 
-      <!-- user stories -->
-      <section class="stories">
-        <img src="./media/images/information-architecture.svg" width="15%" alt="Information Architecture">
+      <section class="stories grid-stories">
+        <img src="./media/images/information-architecture.svg" class="icon-process" alt="Information Architecture">
         <!-- <h5>Information Architecture</h5> -->
         <h3>User Stories</h3>
         <p>In order to <strong>design with the user’s perspective in mind,</strong> I moved on to create user stories based on the information collected on the user survey and also data from the personas. The priorities considered where for a new and returning user. I designed for all the high priorities and some medium and low priorities too.</p>
 
         <!-- table for user stories -->
-        <div class="table-wrapper">
-        <table>
-          <tr>
-            <th>Role</th>
-            <th>Tasks</th>
-            <th>Importance</th>
-          </tr>
-          <tr>
-            <td>As a new user</td>
-            <td>I want to create an account</td>
-            <td>High</td>
-          </tr>
-          <tr>
-            <td>As a new user</td>
-            <td>I want sign into my acount</td>
-            <td>High</td>
-          </tr>
-          <tr>
-            <td>As a new user</td>
-            <td>I want to sync with other devices</td>
-            <td>Medium</td>
-          </tr>
-          <tr>
-            <td>As a new user</td>
-            <td>I want to upgrade my account</td>
-            <td>Medium</td>
-          </tr>
-          <tr>
-            <td>As a new user</td>
-            <td>I want to customize my account</td>
-            <td>Low</td>
-          </tr>
-          <tr>
-            <td>As a new user</td>
-            <td>I want to take a tour of the interface</td>
-            <td>Low</td>
-          </tr>
-          <tr>
-            <!-- empty row to divide stories-->
-          <tr>
-          </tr>
-            <td>As a returning user</td>
-            <td>I want to log in to my account</td>
-            <td>High</td>
-          </tr>
-          <tr>
-            <td>As a returning user</td>
-            <td>I want to recover my password</td>
-            <td>High</td>
-          </tr>
-          <tr>
-            <!-- empty row to divide stories-->
-          <tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to change the capacity of my account</td>
-            <td>Medium</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to create a folder</td>
-            <td>High</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to create a file</td>
-            <td>High</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to create a document</td>
-            <td>Medium</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to create a note</td>
-            <td>Medium</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to upload a folder</td>
-            <td>High</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to upload a file</td>
-            <td>High</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to upload a PDF</td>
-            <td>Medium</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to upload a picture</td>
-            <td>Medium</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to upload a video</td>
-            <td>Medium</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to save a file from a website</td>
-            <td>Medium</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to save a link from a website</td>
-            <td>Medium</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to save a picture from a website</td>
-            <td>Low</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to save a video from a website</td>
-            <td>Low</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to download a file</td>
-            <td>Medium</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to download a folder</td>
-            <td>Medium</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to download a PDF</td>
-            <td>Medium</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to download a picture</td>
-            <td>Medium</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to download a video</td>
-            <td>Medium</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to share with others via text message</td>
-            <td>Medium</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to share with others via text message</td>
-            <td>Medium</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to share with others via social media</td>
-            <td>Medium</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to share with others via email</td>
-            <td>Medium</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to share with others via video conferencing</td>
-            <td>Medium</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to tag files by color</td>
-            <td>Medium</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to tag folders by color</td>
-            <td>Medium</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to organize files by category</td>
-            <td>Medium</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to organize folders by category</td>
-            <td>Medium</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to share a file</td>
-            <td>Medium</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to share a folder</td>
-            <td>Medium</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to share a document</td>
-            <td>Medium</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to share a spreadsheet</td>
-            <td>Medium</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to share a note</td>
-            <td>Medium</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to share a picture</td>
-            <td>Medium</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to share a video</td>
-            <td>Medium</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to open a file</td>
-            <td>Medium</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to open a folder</td>
-            <td>Medium</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to close a file</td>
-            <td>Medium</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to close a folder</td>
-            <td>Low</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to customize my profile</td>
-            <td>Low</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to collaborate</td>
-            <td>High</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to see my synced devices</td>
-            <td>Low</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to edit my settings</td>
-            <td>Low</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to edit my profile</td>
-            <td>Low</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to edit my privacy</td>
-            <td>Medium</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to edit my security</td>
-            <td>Medium</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to filter a file</td>
-            <td>Medium</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to share a folder</td>
-            <td>Low</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to search a file</td>
-            <td>Low</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to move a folder</td>
-            <td>Low</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to delete a folder</td>
-            <td>Low</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to rename a folder</td>
-            <td>Low</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to copy a folder</td>
-            <td>Low</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to move a file</td>
-            <td>Low</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to delete a file</td>
-            <td>Low</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to rename a file</td>
-            <td>Low</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to copy a file</td>
-            <td>Low</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to see my notifications</td>
-            <td>Low</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to back up my files</td>
-            <td>Low</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to back up my folders</td>
-            <td>Low</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to assign permitions to files</td>
-            <td>Low</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to assign permissions to folders</td>
-            <td>Low</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to lock my files</td>
-            <td>Low</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to lock my folders</td>
-            <td>Low</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to see my recent files</td>
-            <td>Medium</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to see my deleted files</td>
-            <td>Low</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to see my deleted folders</td>
-            <td>Low</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to archive a file</td>
-            <td>Low</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to archive a folder</td>
-            <td>Low</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to see an archived file</td>
-            <td>Low</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to see an archived folder</td>
-            <td>Low</td>
-          </tr>
-          <tr>
-            <td>All users</td>
-            <td>I want to log out</td>
-            <td>Medium</td>
-          </tr>
-        </table>
-      </div>
-
+        <div class="stories-wrapper">
+          <p><strong>For new users</strong></p>
+          <p>"As a new user I want to create an account"</p>
+          <p>"As a new user I want to sign into my account"</p>
+          <p>"As a new user I want to sync with other devices"</p>
+          <p>As a new user I want to upgrade my account</p>
+          <p>As a new user I want to customize my account</p>
+          <p>As a new user I want to take a tour of the interface</p>
+          <p><strong>For returning users</strong></p>
+          <p>As a returning user I want to log in to my account</p>
+          <p>As a returning user I want to recover my password</p>
+        </div>
       </section>
-      <a href="#" class="button">See All Stories</a>
-      <!-- <button type="button" name="button">See the User Stories</button> -->
 
-      <!-- user flows -->
-      <section class="user-flows">
-        <img src="./media/images/information-architecture.svg" width="15%" alt="Information Architecture">
+      <a href="#" class="button">See All Stories</a>
+
+      <hr>
+
+      <section class="user-flows grid-user-flows">
+        <img src="./media/images/information-architecture.svg" class="icon-process" alt="Information Architecture">
         <!-- <h5>Information Architecture</h5> -->
         <h3>User Flows</h3>
         <p>To design an <strong>intuitive product,</strong> I designed user flows based on the user stories. This helped me think once more about the user and <strong>how they can accomplish their different tasks as simple as possible.</strong> Reviewing the competitive analysis helped me to refine and enhanced the flows of the more establish cloud storage apps that are known to users.</p>
-        <img src="./media/images/m-userflow-1.jpg" width="100%" alt="Example of three developed user flows">
-
+        <img src="./media/images/m-userflow-1.jpg" alt="Example of three developed user flows">
       </section>
+
       <a href="#" class="button">See all Flows</a>
-      <!-- <button type="button" name="button">See all User Flows</button> -->
 
       <section class="takeaways">
         <h3>Takeaways</h3>
         <p>I was at the beginning of the project a bit glued to follow the user stories ans flows just as I designed them. Only after the usability tests and seems real user interacting with the prototype, let me undertand that these are initial guides, and  even, though some flows changed I knew this change was dictated by the user and not by my own bias. Incorporating and being flexible in changing them <strong>helped me to deliver a more cohesive design.</strong></p>
       </section>
 
-      <!-- wireframe design and testing -->
-      <section class="wireframes">
-        <img src="./media/images/information-architecture.svg" width="15%" alt="Information Architecture">
+      <section class="wireframes grid-wireframes">
+        <img src="./media/images/information-architecture.svg" class="icon-process" alt="Information Architecture">
         <!-- <h5>Information Architecture</h5> -->
         <h3>Wireframes Design and Testing</h3>
         <p>Finalized the user flows, it was <strong>time to start putting the research into a design.</strong> I first sketched the different screens on paper, and drew them on the computer. After all the screens were done, I <strong>performed the first usability test to see how this attempt performed.</strong></p>
-        <img src="./media/images/sketch-1.jpg" width="100%" alt="Initial sketch of dashboard and tagging action">
-        <p>Sketches of dashboard and tagging action</p>
-        <img src="./media/images/sketch-2.jpg" width="100%" alt="Sign in Process wireframes">
-        <p>Sketches of sign in process</p>
-        <img src="./media/images/digital-wireframe-1.jpg" width="100%" alt="Wireframe showing the process of uploading an image">
-        <p>Wireframe of the process to upload an image</p>
-        <img src="./media/images/digital-wireframe-2.jpg" width="100%" alt="Wireframe showing sign up page">
-        <p>Wireframe of the sign up page</p>
-        <a href="#" class="button">All wireframes</a>
-        <!-- <button type="button" name="button">See all the wireframes</button> -->
 
+        <img src="./media/images/sketch-1.jpg" alt="Initial sketch of dashboard and tagging action">
+        <p>Fig. Sketches of dashboard and tagging action</p>
+
+        <img src="./media/images/sketch-2.jpg" alt="Sign in Process wireframes">
+        <p>Fig. Sketches of sign in process</p>
+
+        <img src="./media/images/digital-wireframe-1.jpg" alt="Wireframe showing the process of uploading an image">
+        <p>Fig. Wireframe of the process to upload an image</p>
+
+        <img src="./media/images/digital-wireframe-2.jpg" alt="Wireframe showing sign up page">
+        <p>Fig. Wireframe of the sign up page</p>
+      </section>
+
+      <a href="#" class="button">All wireframes</a>
+
+      <hr>
+
+      <section class="wireframes-changes grid-wireframes-changes">
         <h3>Changes Made After the Usability Test</h3>
         <p>It was a challenge to see the user picking apart the design. <strong>In some cases the accomplished the task I handed to them,</strong> and in some other cases <strong>they just got stuck</strong> (Like in the where a user was trying to log in for the first time with his password). I listened closely and watched them, and iterated on the design to remove these friction points.</p>
 
-        <img src="./media/images/retrieve-code.jpg" width="100%" alt="Code retrieval screen">
+        <img src="./media/images/retrieve-code.jpg" alt="Code retrieval screen">
         <h4>Where to retrive the code?</h4>
         <p>Users where confuse on where they were suppose to retrieve this code. Was it on the email? Some of them asked me if they were suppose to receive the code on their phones as a text message. <strong>To resolve the issue, I added the option of receeiving the code on their email or as a text message.</strong></p>
 
-        <img src="./media/images/icons-sidebar.jpg" width="100%" alt="Dashboard showing the need to add icons on the sidebar">
+        <img src="./media/images/icons-sidebar.jpg" alt="Dashboard showing the need to add icons on the sidebar">
         <h4>Icons on the sidebar</h4>
-        <!-- remember
-        to add an
-        anchor fot the link -->
         <p>While I was watching the user interacting with the sidebar, I noticed that they were slowing down a bit to read the buttons. I knew righ away that <strong>one option to aid the user was to add icons next to the buttons.</strong> I was opposed to doing that because I wanted to keep the UI as clean as possible. Nonetheless, the isssue persisted with the other user and I had to perform a preference test <a href="index.html">(As will be shown later).</a> The result was that <strong>people overwhelmed prefered icons.</strong> This was an opportunity for me to listen to the users.</p>
 
-        <img src="./media/images/tour-interface.jpg" width="100%" alt="Dasboard showing the need to add tour the interface">
+        <img src="./media/images/tour-interface.jpg" alt="Dasboard showing the need to add tour the interface">
         <h4>"Tour the Interface"</h4>
         <p>Upon arriving to “home” after signing up, some user where confuse about the UI. I <strong>added a message for the empty state</strong> as a starting point for the new user so they can get familiar with the app.</p>
 
-        <img src="./media/images/tags.jpg" width="100%" alt="Dasboard showing the need to rethink the spelling of tag">
+        <img src="./media/images/tags.jpg" alt="Dasboard showing the need to rethink the spelling of tag">
         <h4>Label "Tags" was confusing</h4>
         <p>Some user did not know what “Tags” mean. They where looking everywhere on the interface to complete the task of tagging an item. <strong>I had to apply restrain to me in the sense that I wanted to help them out,</strong> but I knew what was the problem right away when an user expressed that “tagged” sounds more like a buttom that they would click.</p>
 
-        <img src="./media/images/x-on-modals.jpg" width="100%" alt="Dasboard showing the need to add an X to close modals">
+        <img src="./media/images/x-on-modals.jpg" alt="Dasboard showing the need to add an X to close modals">
         <h4>"X" to close modals</h4>
         <p>For my surprise, <strong>user could not close the modals, because for an oversight I did not add a way fo the user to close the modals.</strong> I assumed that they would complete the action. When I saw them stuck on that state, I knew that for the next iteration <strong>I had to add an “X” to indicate that the modal can be closed without completing the action.</strong> Later on I opted for a “Cancel” buttom to accomplish the same action.</p>
-        <!-- <button type="button" name="button">Watch the Usability Test Videos</button> -->
-        <a href="#" class="button">Watch the Videos</a>
       </section>
 
-
+      <a href="#" class="button">Watch the videos</a>
 
       <section class="takeaways">
         <h3>Takeaways</h3>
         <p>The feedback garthered after the usability test was invaluable. It let me evaluate some of my ideas and see if they work in <strong>some cases they did, in others, they were not good</strong> at all, and I even discovered some mistakes. <strong>This feedback let me push the design forward.</strong></p>
       </section>
 
-      <!-- high fidelity prototype design and testing -->
-      <section class="hi-fi-prototype">
-        <img src="./media/images/information-architecture.svg" width="15%" alt="Information Architecture">
+      <section class="high-prototype grid-high-prototype">
+        <img src="./media/images/information-architecture.svg" class="icon-process" alt="Information Architecture">
         <!-- <h5>Information Architecture</h5> -->
         <h3>High Fidelity Prototype Design and Testing</h3>
         <p>To <strong>implement the findings of the usability test,</strong> and to apply the branding, I created a high fidelity prototype that I could further test with users.</p>
         <p>One of the challenges I had to overcome during the low-fi prototype and if I did not corrected was the way I designed the prototype was a bit confuse to the user because there where so many screens, if the user made an unexpected decision, they next screen could be something that they were not expecting. <strong>I overcame this issue by re-assembling the prototype and made the flow simpler and linear.</strong></p>
-        <img src="./media/images/dashboard.jpg" width="100%" alt="Cloudspring Dashboard image showing All Files">
-        <p>Dashboard showing "All Files"</p>
-        <img src="./media/images/new-modal.jpg" width="100%" alt="Dashboard showing new modal">
-        <p>"New" modal activated</p>
-        <img src="./media/images/download-to-modal.jpg" width="100%" alt="Dashboard showing download to modal">
-        <p>"Download To" modal</p>
-        <img src="./media/images/choose-plan.jpg" width="100%" alt="Screenshot of choosing your plan iteraction">
-        <p>"Choose Your New Plan" screen</p>
-        <img src="./media/images/choose-plan.jpg" width="100%" alt="Cloudspring Dashboard image showing All Files">
-        <p>"Tag a Folder" action</p>
-        <!-- <button type="button" name="button">See All High-Fi Wireframes</button> -->
-        <!-- <a href="#" class="button-2">See All High-Fi Wireframes</a> -->
 
-        <h3 class="separator">Changes Made After the High Fidelity Prototype Usability Test</h3>
+        <img src="./media/images/dashboard.jpg" class="high-prototype-picture" alt="Cloudspring Dashboard image showing All Files">
+        <p>Dashboard showing "All Files"</p>
+
+        <img src="./media/images/new-modal.jpg" class="high-prototype-picture" alt="Dashboard showing new modal">
+        <p>"New" modal activated</p>
+
+        <img src="./media/images/download-to-modal.jpg" class="high-prototype-picture" alt="Dashboard showing download to modal">
+        <p>"Download To" modal</p>
+
+        <img src="./media/images/choose-plan.jpg" class="high-prototype-picture" alt="Screenshot of choosing your plan iteraction">
+        <p>"Choose Your New Plan" screen</p>
+
+        <img src="./media/images/choose-plan.jpg" class="high-prototype-picture" alt="Cloudspring Dashboard image showing All Files">
+        <p>"Tag a Folder" action</p>
+      </section>
+
+      <hr>
+
+      <section class="high-prototype-changes grid-high-prototype-changes">
+        <h3>Changes Made After the High Fidelity Prototype Usability Test</h3>
         <p>To discover what was working after some iteration of the design, I performed a series of usability test on the high fidelity prototype. I conducted 2 remote testings over Skype and 1 in-person test. Following, the changes implemented:</p>
 
-        <img src="./media/images/heading-home.jpg" width="100%" alt="Dashboard showing the need to change home to all files">
+        <img src="./media/images/heading-home.jpg" class="high-prototype-changes-picture" alt="Dashboard showing the need to change home to all files">
         <h4>From "Home" to "My Files"</h4>
         <p>Some users were confused with the heading “Home” on the dashboard and also on the left-side panel. I changed it to read “My files”.</p>
 
-        <img src="./media/images/modal-separation.jpg" width="100%" alt="Dashboard showing the need to separate the modal from the background">
+        <img src="./media/images/modal-separation.jpg" class="high-prototype-changes-picture" alt="Dashboard showing the need to separate the modal from the background">
         <h4>Separation between modal and background</h4>
         <p>When in front of a modal, some user did not realize the background was not clickable. A solution was to make the modal’s background a bit darker to establish separation.</p>
 
-        <img src="./media/images/upload-to.jpg" width="100%" alt="Modal showing the need to add a new folder option">
+        <img src="./media/images/upload-to.jpg" class="high-prototype-changes-picture" alt="Modal showing the need to add a new folder option">
         <h4>"New Folder" option when Uploading</h4>
         <p>During uploading, user expressed that they wanted to have an option of creating a new folder to place what they are uploading inside it.</p>
 
-        <img src="./media/images/password-strength.jpg" width="100%" alt="Screen showing the need to add a password strength indicator">
+        <img src="./media/images/password-strength.jpg" class="high-prototype-changes-picture" alt="Screen showing the need to add a password strength indicator">
         <h4>Password strength indicator</h4>
         <p>During onboarding, an user expressed that he would feel more comfortable if he can get suggestion or an indication of how strong his password.</p>
-        <!-- <button type="button" name="button">Watch the Usability Test Videos</button> -->
+      </section>
 
-        <h3 class="separator">High Fidelity Prototype Remote Test</h3>
+        <a href="#" class="button">Watch the videos</a>
+
+        <hr>
+
+      <section class="remote-test grid-remote-test">
+        <h3>High Fidelity Prototype Remote Test</h3>
         <p>Supplementary to the previous user testing, I conducted a remote task for testers to <strong>validate that the user could complete their tasks on their own.</strong> After the test, I was found out that all the given tasks evaluated to more than 90% success. However, I discovered that during the “create document mission”, <strong>users were having difficulty in closing the document.</strong> I implemented a change by adding an “X” to falicitate that action.</p>
-        <img src="./media/images/heatmap-test.jpg" width="100%" alt="Screens showing the heatmap of the user interacting with the document">
+
+        <img src="./media/images/heatmap-test.jpg" alt="Screens showing the heatmap of the user interacting with the document">
         <p>Heatmap showing the user trying to locate an "Exit" button</p>
 
       </section>
+
       <a href="#" class="button">See Results</a>
 
       <section class="takeaways">
@@ -799,113 +396,59 @@
         <p>After all these feedback, I was able to further refined the product and make it more user-centric. One of the ideas that I had with this project, was that I wanted the design to be easy to undertand and I wanted the user to have somewhat the same experience as it she was using the desktop.</p>
       </section>
 
-      <!-- branding -->
-      <section class="branding">
-        <img src="./media/images/visual-design.svg" width="15%" alt="Branding">
+      <section class="branding grid-branding">
+        <img src="./media/images/visual-design.svg" class="icon-process" alt="Branding">
         <!-- <h5>Branding</h5> -->
         <h3>Branding</h3>
         <p>To start infusing personality to the brand, I started brainstorming some <strong>names that can create a connection to the main users.</strong> I also used mindmapping to help me funnel the different ideas that were coming to my mind. I settle on the idea of a spring coil and a cloud. Spring coil <strong>evoking the storage of energy and the fast or controlled release of it,</strong> and the cloud to use it as an anchor of the idea that the <strong>files can be accessed easily anywhere.</strong> To get to the logo, I <strong>studied the shape</strong> of a spring coil and a cloud. I did not want the logo to be too literal, but a nod to the components, since the name “Cloudsping”, has the meaning on it.</p>
+
         <h4>Logo Mindmaps and Sketches</h4>
-        <img src="./media/images/sketches-mindmaps.jpg" width="100%" alt="Logo Mindmaps and Sketches">
+        <img src="./media/images/sketches-mindmaps.jpg" alt="Logo Mindmaps and Sketches">
+
         <h4>Moodboard</h4>
-        <img src="./media/images/moodboard.jpg" width="100%" alt="Moodboard for brand inspiration">
+        <img src="./media/images/moodboard.jpg" alt="Moodboard for brand inspiration">
+
         <h4>Style Guide</h4>
-        <img src="./media/images/styleguide.jpg" width="100%" alt="Style Guide for the Brand">
-        <!-- color swatches -->
-        <!-- <aside class="swatches">
-          <svg width="200" height="110">
-            <rect width="100" height="100" style="fill:rgb(0,10,255);" />
-          </svg>
+        <img src="./media/images/styleguide.jpg" alt="Style Guide for the Brand">
 
-          <svg width="200" height="110">
-            <rect width="100" height="100" style="fill:rgb(12,0,255);" />
-          </svg>
+        <a href="#" class="button grid-button">See Style Guide</a>
 
-          <svg width="200" height="110">
-            <rect width="100" height="100" style="fill:rgb(0,6,255);" />
-          </svg>
-
-          <svg width="200" height="110">
-            <rect width="100" height="100" style="fill:rgb(0,98,255);" />
-          </svg>
-        </aside> -->
-        <a href="#" class="button">See Style Guide</a>
-        <!-- <button type="button" name="button">See the Complete Style Guide</button> -->
         <h4>Typography</h4>
         <p>The main typography has a rounded feeling, going well with the rounded feel of the icon. The chosen colors are blue (meaning <strong>inspiration, creativity and intelligence)</strong> and gray (balance, neutral). The supported icons also have a rounded feeling, playing very well with the brand. I think the approach can work very well since <strong>the user will get used to see the logo and will remember its meaning</strong> and associated it with the cloud storage solution.</p>
-          <aside class="typography">
-          <h6>Rubik</h6>
-          <p>abcdefghijklmnopqrstuvwxyz</p>
-          <p>abcdefghijklmnopqrstuvwxyz</p>
-          <p>0123456789</p>
-          <ul>
-            <li>Light</li>
-            <li>Regular</li>
-            <li>Medium</li>
-            <li>Bold</li>
-            <li>Black</li>
-            <li>Light Italic</li>
-            <li>Italic</li>
-            <li>Medium Italic</li>
-            <li>Bold Italic</li>
-            <li>Black Italic</li>
-          </ul>
 
-          <h6>Roboto</h6>
-          <p>abcdefghijklmnopqrstuvwxyz</p>
-          <p>abcdefghijklmnopqrstuvwxyz</p>
-          <p>0123456789</p>
-          <ul>
-            <li>Thin</li>
-            <li>Light</li>
-            <li>Regular</li>
-            <li>Medium</li>
-            <li>Bold</li>
-            <li>Black Italic</li>
-            <li>Thin Italic</li>
-            <li>Light Italic</li>
-            <li>Regular Italic</li>
-            <li>Medium Italic</li>
-            <li>Bold Italic</li>
-            <li>Black Italic</li>
-          </ul>
-          </aside>
-          <p>The two typefaces showing a variety of fonts</p>
+        <img src="./media/images/typography.jpg" alt="Style Guide for the Typography">
+        <!-- <p>The two typefaces showing a variety of fonts</p> -->
       </section>
 
-      <!-- prototype preference test -->
-      <section class="preference">
-        <img src="./media/images/visual-design.svg" width="15%" alt="Branding">
+      <section class="preference-test grid-preference-test">
+        <img src="./media/images/visual-design.svg" class="icon-process" alt="Branding">
         <!-- <h5>Branding</h5> -->
         <h3>Prototype Preference Test</h3>
         <p>Before releasing the prototype for another round of tests, I performed a preference test on 3 components. This is where I had to listen to the user when they decided that icons on the sidebar made for a better experience.</p>
 
         <h4>Icons on Sidebar</h4>
-        <img src="./media/images/icons-sidebar-2.jpg" width="100%" alt="Branding">
+        <img src="./media/images/icons-sidebar-2.jpg" alt="Branding">
         <p><span class="approved">83%</span> Preferred sidebar with icons.</p>
-        <img src="./media/images/icons-sidebar-1.jpg" width="100%" alt="Branding">
+        <img src="./media/images/icons-sidebar-1.jpg" alt="Branding">
         <p><span class="shelved">17%</span> Preferred sidebar with no icons.</p>
 
-        <!-- <hr> -->
-
         <h4>Selecting an Item</h4>
-        <img src="./media/images/select-item-2.jpg" width="100%" alt="Branding">
+        <img src="./media/images/select-item-2.jpg" alt="Branding">
         <p><span class="approved">54%</span> Preferred squared selection.</p>
-        <img src="./media/images/select-item-1.jpg" width="100%" alt="Branding">
+        <img src="./media/images/select-item-1.jpg" alt="Branding">
         <p><span class="shelved">46%</span> Preferred name highlighted.</p>
 
-        <!-- <hr> -->
-
         <h4>Picture Placement</h4>
-        <img src="./media/images/picture-placement-2.jpg" width="100%" alt="Branding">
+        <img src="./media/images/picture-placement-2.jpg" alt="Branding">
         <p><span class="approved">43%</span> Preferred picture on sidebar.</p>
-        <img src="./media/images/picture-placement-1.jpg" width="100%" alt="Branding">
+        <img src="./media/images/picture-placement-1.jpg" alt="Branding">
         <p><span class="shelved">40%</span> Preferred picture on left-top side.</p>
       </section>
 
-      <!-- product highlights -->
-      <section class="highlights">
-        <img src="./media/images/highlight.svg" width="15%" alt="Product highlights">
+      <hr>
+
+      <section class="product-highlights grid-product-highlights">
+        <img src="./media/images/highlight.svg" class="icon-process" alt="Product highlights">
         <!-- <h5>Highlights</h5> -->
         <h3>Product Highlights</h3>
         <p>At the conclusion of this project, <strong>everything the client asked for was delivered:</strong></p>
@@ -920,57 +463,58 @@
           <li>Connecting with other users for real-time collaboration in notes or documents.</li>
         </ul>
 
-        <img src="./media/images/homepage-video.jpg" width="100%" alt="Animation of the Homepage">
+        <img src="./media/images/homepage-video.jpg" alt="Animation of the Homepage">
         <h4>Homepage</h4>
         <p>The design of the homepage is clean ant tries to guide the user to sign up for one of the options after giving a tour of all the benefits of the service.</p>
 
-        <img src="./media/images/new-document.jpg" width="100%" alt="Animation of a New Document">
+        <img src="./media/images/new-document.jpg" alt="Animation of a New Document">
         <h4>New Document</h4>
         <p>Since one of the requisites of the project was to have a document creation option, this was provided with the most easy-to-do interface. Focusing also on sharing and collaboration, which according to the client’s guidelines and the research performed, were very important.</p>
 
-        <img src="./media/images/upload-file.jpg" width="100%" alt="Animation of Uploading a File">
+        <img src="./media/images/upload-file.jpg" alt="Animation of Uploading a File">
         <h4>Upload a File</h4>
         <p>The application is not only expected to be a place where users create, but also facilitate when users upload data. This we provide by a easy-to-follow interaction.</p>
 
-        <img src="./media/images/collaboration.jpg" width="100%" alt="Animation of Collaboration">
+        <img src="./media/images/collaboration.jpg" alt="Animation of Collaboration">
         <h4>Collaboration</h4>
         <p>The oportunity to collaborate on any kind of file is supplied by an easy user experience: Just check a box, procide the medium to alert the guest, set some security measure, and the process is done.</p>
 
-        <img src="./media/images/tagging.jpg" width="100%" alt="Animation of Tagging">
+        <img src="./media/images/tagging.jpg" alt="Animation of Tagging">
         <h4>Tagging</h4>
         <p>Is expected that the user of this app comes many times to share, store and collaborate. To rein-in all the expected data, the easy tagging system would make finding any file a very pleasant experience.</p>
 
-        <img src="./media/images/sharing.jpg" width="100%" alt="Animation of Sharing">
+        <img src="./media/images/sharing.jpg" alt="Animation of Sharing">
         <h4>Sharing</h4>
         <p>Sharing is not only expected by the user, but also encouraged by the app. Everytime the user want to perform an action, she can fill confident that will have the opportunity to share that file with others.</p>
       </section>
 
-      <!-- what i learned -->
-      <section class="reflexions">
+      <a href="#" class="button">View Prototype</a>
+
+      <section class="what-learned grid-what-learned">
         <h2>What I learned</h2>
         <p>This project was an excellent experience. At the beginning of the project, and while it was progressing, one of the things that was difficult to me was to <strong>see the whole picture:</strong> I could not grasp how one process would connect to the other, but now at the conclusion of the project, I can <strong>clearly see how all the pieces fit together, and anchor the project through the use of a stablish process in a good user experience.</strong> I also learned to “trust the process”, not just make decisions based on what I think looks good or feels right, but to <strong>consult the user at any stage of the project,</strong> and see if it’s usable to them.</p>
         <p>One of the things that surprised me during the testing phase was how I need to <strong>always keep in mind the user:</strong> Just because I know how something was designed or works, that does not mean the user will understand it easily.</p>
         <p>Given more time, I would have liked to research a bit more the competition and also to spend more time testing other components of the design. I also would like to develop an app as a companion to the website. Even though I think </strong>this product delivers to the end user and the client,</strong> I believe that it could be improved further in future iterations.</p>
       </section>
 
-      <!-- activate later
+      <!-- activate later, when I have more than 1 proyect
       <section>
         <h2>Read How I Solved a Different Problem wit These Other Projects:</h2>
         <img src="./media/images/project-1.jpg" alt="Read About Project 1">
         <img src="./media/images/project-2.jpg" alt="Read About Project 2">
       </section2 -->
 
-      <footer>
-        <p><a href="#back-to-top">Back to Top</a></p>
-        <h3>Let's Talk</h3>
+      <footer class="grid-1">
+        <p class="fine-print"><a href="#back-to-top">Back to Top</a></p>
+        <h2>Let's Talk</h2>
         <ul>
-          <li><img src="./media/images/linkedin.svg" width="40px" alt="Connect with me via LinkedIn" class="svg"/></li>
-          <li><img src="./media/images/pinterest.svg" width="40px" alt="Connect with me via pinterest" class="svg"/></li>
-          <li><img src="./media/images/twitter.svg" width="40px" alt="Connect with me via Twitter" class="svg"/></li>
-          <li><img src="./media/images/facebook.svg" width="40px" alt="Connect with me via Facebook" class="svg"/></li>
-          <li><img src="./media/images/instagram.svg" width="40px" alt="Connect with me via Instagram" class="svg"/></li>
+          <li><a href="https://www.linkedin.com/in/efrencast" ><img src="./media/images/linkedin.svg" alt="Connect with me via LinkedIn"/></a></li>
+          <li><img src="./media/images/pinterest.svg" alt="Connect with me via pinterest"/></li>
+          <li><img src="./media/images/twitter.svg" alt="Connect with me via Twitter"/></li>
+          <li><img src="./media/images/facebook.svg" alt="Connect with me via Facebook"/></li>
+          <li><img src="./media/images/instagram.svg" alt="Connect with me via Instagram"/></li>
         </ul>
-        <p>&copy; 2019. Designed and hand coded by Efren Castillo</p>
+        <p class="fine-print">&copy; 2019. Designed and hand coded by Efren Castillo</p>
       </footer>
 
     </div>
