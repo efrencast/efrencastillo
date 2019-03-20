@@ -43,6 +43,17 @@ footer a:nth-of-type(1) {
   text-align: center;
 }
 
+.preference-test img + p {
+  color: #d0474b; /* special red. only used here */
+  font-size: 18px;
+  text-align: center;
+}
+
+.preference-test img + p:nth-of-type(2n+0) {
+  color: #19b38e; /* special green. only used here */
+  margin-bottom: 15px;
+}
+
 h1 {
   color: #213942;
   font-family: 'Poppins', sans-serif;
@@ -241,6 +252,10 @@ a:active {
   color: #EFBF4E;
 }
 
+.navigation a:hover {
+  text-decoration: underline;
+}
+
 /* images */
 
 img {
@@ -284,13 +299,14 @@ img {
 
 .user-flows img {
   margin: 30px 0;
+  max-width: 100%;
 }
 
 .wireframes img, .high-prototype img, .remote-test img, .product-highlights img{
   margin-top: 50px;
 }
 
-/* The following code fixes the issue with some image-icon that take the styles of some selectors: */
+/* note: code fixes the issue with some image-icon that take the styles of some selectors: */
 
 .wireframes img:nth-of-type(1) {
   margin-top: 0;
@@ -300,13 +316,23 @@ img {
   margin-top: 0;
 }
 
+.product-highlights img:nth-of-type(1) {
+  margin-top: 0;
+}
+
+/* end of note */
+
+.branding img {
+  margin: 10px 0;
+}
+
 .wireframes-changes img, .high-prototype-changes img {
   margin-top: 50px;
   margin-bottom: 10px;
 }
 
 footer img {
-  width: 50%;
+  width: 80%;
 }
 
 /* navigation */
@@ -762,3 +788,7 @@ footer p, footer h2, footer ul {
 }
 
 /* //////////// */
+
+footer img:hover {
+  opacity: .5;
+}
