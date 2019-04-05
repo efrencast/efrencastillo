@@ -5,82 +5,101 @@
     <meta name="author" content="Efren Castillo">
     <meta name="description" content="This is the UX and UI portfolio of Efren Castillo">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Efren Castillo | Product Designer Designer</title>
+    <title>Efren Castillo | Product Designer</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/mediaqueries.css">
     <link rel="stylesheet" href="https://use.typekit.net/cjj3uyq.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body id="back-to-top">
     <div class="wrapper">
 
-      <nav class="navigation">
-        <section class="ec-logo">
-          <a href="index.html"><img src="./media/images/logo.svg" alt="Efren Castillo Personal Logo" /></a>
-        </section>
-        <section class="nav-links">
+      <nav class="nav">
+        <div class="nav-logo">
+          <a href="index.html"><img src="./media/images/logo.svg" alt="Efren Castillo Logo" /></a>
+        </div>
+        <div class="nav-links">
           <ul>
             <li><a href="cloudspring.html">Projects</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="resume.html">Resume</a></li>
-            <!-- <li><a href="contact.html">Contact</a></li> -->
+            <li><a href="contact.html">Contact</a></li>
           </ul>
-      </section>
+        </div>
       </nav>
 
-      <section class="grid-skew">
-        <section class="banner grid-1">
+      <section data-aos="zoom-out" class="banner">
+        <div class="my-intro">
           <h3>Hi there!</h3>
           <h1>I'm Efren Castillo</h1>
           <p>New York City-based UX and Visual Designer. Turning challenges
-          into <strong>research-based</strong> solutions wrapped in <strong>empathy for the user.</strong></p>
-        </section>
-
-        <section class="see-more grid-1">
-          <img src="./media/images/arrow.svg" alt="Click this arrow to see my latest projects" />
-          <h3>Latest Projects</h3>
-          <p>Some of the latest projects I’ve been working on.</p>
-        </section>
+          into <strong>research-based</strong> solutions wrapped in<strong>empathy for the user.</strong></p>
+          <img src="./media/images/caret-down-solid.svg" alt="Click this arrow to seemy latest projects" />
+        </div>
       </section>
 
-      <section class="project grid-1">
-        <img src="./media/images/cloudspring-laptop.gif" alt="View of cloudspring on a laptop" />
-        <h6>UX | UI | Branding<h6>
-        <h2>Cloudspring</h2>
-        <p class="project-description">Cloud-based file storage and organization tool that facilitates the user to create and collaborate seamlessly.</p>
-        <a href="cloudspring.html" class="button">Read Case Study</a>
+      <section class="latest">
+        <h3>Latest Projects</h3>
+        <p>Some of the latest projects I’ve been working on.</p>
       </section>
 
-      <section class="project project-secondary grid-1">
-        <img src="./media/images/blocjams-interface.gif" alt="View of Bloc Jams interface" />
-        <h6>Javascript | JQuery</h6>
-        <h2>Bloc Jams</h2>
-        <p class="project-description">A starter project for Bloc's jQuery-driven music player app.</p>
-        <a href="https://efrencast.github.io/bloc-jams-jquery/" class="button">Visit Website</a>
+      <section class="project">
+        <div class="project_img">
+          <img src="./media/images/cloudspring-laptop.gif" alt="View of cloudspring on a laptop" />
+        </div>
+        <div class="project_info">
+          <h6>UX | UI | Branding<h6>
+          <h2>Cloudspring</h2>
+          <p>Cloud-based file storage and organization tool that facilitates the user to create and collaborate seamlessly.</p>
+          <a href="cloudspring.html" class="button">Read Case Study</a>
+        </div>
       </section>
 
-      <section class="grid-skew">
-        <section class="my-process grid-1">
-          <h2>My Process</h2>
-          <p>Whenever I start a project, and particularly when I approach the design part of it,
-          I always ask myself: <strong>“How can I design this interface in a way that is easy to use?”</strong>
-          My process includes time to think about usability and how the end-user would interact
-          with the product being designed.</p>
-        </section>
+      <section class="project project-2">
+        <div class="project_img">
+          <img src="./media/images/blocjams-interface.gif" alt="View of Bloc Jams interface" />
+        </div>
+        <div class="project_info">
+          <h6>Javascript | JQuery<h6>
+          <h2>Bloc Jams</h2>
+          <p>A starter project for Bloc's jQuery-driven music player app.</p>
+          <a href="https://efrencast.github.io/bloc-jams-jquery/" class="button">Visit Website</a>
+        </div>
       </section>
 
-      <footer class="grid-1">
-        <p class="fine-print"><a href="#back-to-top">Back to Top</a></p>
-        <h2>Let's Talk</h2>
-        <ul>
-          <li><img src="./media/images/icons8-linkedin-480.png" alt="Connect with me via LinkedIn"/></a></li>
-          <li><img src="./media/images/icons8-github-512.png" alt="Connect with me via GitHub"/></li>
-          <li><img src="./media/images/icons8-twitter-480.png" alt="Connect with me via Twitter"/></li>
-          <li><img src="./media/images/icons8-instagram-500.png" alt="Connect with me via Instagram"/></li>
-          <li><img src="./media/images/icons8-pinterest-500.png" alt="Connect with me via pinterest"/></li>
-        </ul>
-        <p class="fine-print">&copy; 2019. Designed and hand coded by Efren Castillo</p>
+      <section class="my-process">
+        <h2>My Process</h2>
+        <p>Whenever I start a project, and particularly when I approach the design parof it,
+        I always ask myself: <strong>“How can I design this interface in a way that iseasy to use?”</strong>
+        My process includes time to think about usability and how the end-user wouldinteract
+        with the product being designed.</p>
+      </section>
+
+      <footer>
+        <div class="footer-btp">
+        <!-- <p class="fine-print"><a href="#back-to-top">Back to Top</a></p> -->
+          <h2>Let's Talk</h2>
+        </div>
+          <div class="social-icons">
+          <ul>
+            <li><img src="./media/images/icons8-linkedin-480.png" alt="Connect with me via LinkedIn"/></a></li>
+            <li><img src="./media/images/icons8-github-512.png" alt="Connect with me via GitHub"/></li>
+            <li><img src="./media/images/icons8-twitter-480.png" alt="Connect with me via Twitter"/></li>
+            <li><img src="./media/images/icons8-instagram-500.png" alt="Connect with me via Instagram"/></li>
+            <li><img src="./media/images/icons8-pinterest-500.png" alt="Connect with me via pinterest"/></li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2019. Designed and hand coded by Efren Castillo</p>
+        </div>
       </footer>
     </div>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

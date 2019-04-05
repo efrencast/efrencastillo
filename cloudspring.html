@@ -9,81 +9,117 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/mediaqueries.css">
     <link rel="stylesheet" href="https://use.typekit.net/cjj3uyq.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body id="back-to-top">
     <div class="wrapper">
 
-      <nav class="navigation">
-        <section class="ec-logo">
-          <a href="index.html"><img src="./media/images/logo.svg" alt="Efren Castillo Personal Logo" /></a>
-        </section>
-        <section class="nav-links">
+      <nav class="nav">
+        <div class="nav-logo">
+          <a href="index.html"><img src="./media/images/logo.svg" alt="Efren Castillo Logo" /></a>
+        </div>
+        <div class="nav-links">
           <ul>
             <li><a href="cloudspring.html">Projects</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="resume.html">Resume</a></li>
-            <!-- <li><a href="contact.html">Contact</a></li> -->
+            <li><a href="contact.html">Contact</a></li>
           </ul>
-      </section>
+        </div>
       </nav>
 
-      <section class="banner-cloudspring">
-        <img src="./media/images/cloudspring-laptop.gif" alt="View of cloudspring on a laptop" />
-        <img src="./media/images/cloudspring-logo.svg" alt="Cloudspring Logo">
-        <p>Cloud-based file storage and organization tool that facilitates the user to create and collaborate seamlessly.</p>
-        <a href="#" class="button">View Prototype</a>
+      <section data-aos="zoom-out" class="banner-cloudspring">
+        <div class="banner-cloudspring-img">
+          <img src="./media/images/cloudspring-laptop.gif" alt="View of cloudspring on a laptop" />
+        </div>
+        <div class="banner-cloudspring-txt">
+          <img src="./media/images/cloudspring-logo.svg" alt="Cloudspring Logo">
+          <p>Cloud-based file storage and organization tool that facilitates the user to create and collaborate seamlessly.</p>
+          <a href="https://invis.io/EPOXQ8149A3" target="_blank" class="button">View Prototype</a>
+        </div>
       </section>
+      <!-- summary -->
+      <section class="summary">
 
-      <section class="summary grid-projects">
-        <h2>Summary</h2>
+        <h2 class="hide-desktop">Summary</h2>
+        <h2 class="hide">Project Summary</h2>
         <h3>The Challenge</h3>
+        <div class="summary-txt">
         <p>The client wanted a cloud storage and organization application. Even though there are other well-known companies in this field, the goal was to focus on the user having an <strong>easier interaction when saving, creating, and sharing any kind of content.</strong> By doing this, the client believed that a space can open up for this new application. <strong>Identifying the target audience</strong> was needed for this project, and also developing an <strong>identity for the brand.</strong></p>
         <h3>The Solution</h3>
         <p>Upon receiving the project and asking follow-up questions to the client, my starting point was to conduct a research to get to know potential users, then progressing to design, and finally zero in on testing, to make sure that the solution will satisfy the end-user. The final solution was an <strong>intuitive and easy-to-use app with a modern and minimalist design that invites the user to use it effortlessly.</strong> It also filled all the requirements set forth by the client.</p>
+</div>
       </section>
+      <!-- end summary -->
 
-      <section class="process grid-process">
-        <h2>Process</h2>
-        <img src="./media/images/project-discovery.svg" class="icon-process" alt="Project Discovery">
-        <h4>Project Discovery</h4>
-        <ul>
-          <li>Project brief</li>
-          <li>Technical specifications</li>
-          <li>Timeline</li>
-        </ul>
-        <img src="./media/images/strategy.svg" class="icon-process" alt="Strategy">
-        <h4>Strategy</h4>
-        <ul>
-          <li>User research</li>
-          <li>Competitive analysis</li>
-          <li>Personas</li>
-        </ul>
-        <img src="./media/images/information-architecture.svg" class="icon-process" alt="Information Architecture">
-        <h4>Information Architecture</h4>
-        <ul>
-          <li>User stories</li>
-          <li>User flows</li>
-          <li>Wireframes</li>
-          <li>Prototypes</li>
-          <li>Usability test</li>
-        </ul>
-        <img src="./media/images/visual-design.svg" class="icon-process" alt="Visual Design">
-        <h4>Visual Design</h4>
-        <ul>
-          <li>Sketches</li>
-          <li>Mindmaps</li>
-          <li>Moodboards</li>
-          <li>Style guide</li>
-          <li>Hi-fi mockups</li>
-          <li>Preference test</li>
-        </ul>
+      <!-- process -->
+      <section data-aos="fade-up" class="process">
+        <h2>The Process</h2>
+        <div class="process-img-1">
+          <img src="./media/images/project-discovery.svg" class="icon-process" alt="Project Discovery">
+        </div>
+        <div class="p-discovery">
+          <h4>Project Discovery</h4>
+          <ul>
+            <li>Project brief</li>
+            <li>Technical specifications</li>
+            <li>Timeline</li>
+          </ul>
+        </div>
+        <div class="process-img-2">
+          <img src="./media/images/strategy.svg" class="icon-process" alt="Strategy">
+        </div>
+        <div class="p-strategy">
+          <h4>Strategy</h4>
+          <ul>
+            <li>User research</li>
+            <li>Competitive analysis</li>
+            <li>Personas</li>
+          </ul>
+        </div>
+        <div class="process-img-3">
+          <img src="./media/images/information-architecture.svg" class="icon-process" alt="Information Architecture">
+        </div>
+        <div class="p-architecture">
+          <h4>Information Architecture</h4>
+          <ul>
+            <li>User stories</li>
+            <li>User flows</li>
+            <li>Wireframes</li>
+            <li>Prototypes</li>
+            <li>Usability test</li>
+          </ul>
+        </div>
+        <div class="process-img-4">
+          <img src="./media/images/visual-design.svg" class="icon-process" alt="Visual Design">
+        </div>
+        <div class="p-visual">
+          <h4>Visual Design</h4>
+          <ul>
+            <li>Sketches</li>
+            <li>Mindmaps</li>
+            <li>Moodboards</li>
+            <li>Style guide</li>
+            <li>Hi-fi mockups</li>
+            <li>Preference test</li>
+          </ul>
+        </div>
       </section>
+      <!-- end process -->
 
-      <section class="brief grid-brief">
+      <!-- side litte image -->
+      <div data-aos="flip-left" class="process-icons">
         <img src="./media/images/project-discovery.svg" class="icon-process" alt="Project Discovery">
-        <!-- <h5>Project Discovery</h5> -->
+        <h5 class="hide">Project<br>Discovery</h5>
+      </div>
+      <!-- end side litte image -->
+
+      <!-- project brief -->
+      <section class="brief">
         <h3>Project Brief</h3>
         <p>This, being a new app in the market, the client wanted to <strong>make an impact in the productivity of the would-be users.</strong> She requested that the app should as <strong>MVP at the time of launch:</strong></p>
         <ul>
@@ -96,152 +132,238 @@
           <li>Connect with other users for real-time collaboration.</li>
         </ul>
       </section>
+      <!-- end project brief -->
 
-      <section class="specifications grid-specifications">
-        <h4 class="margin-fix">Roles</h4>
-        <ul>
-          <li>Researcher</li>
-          <li>Content Producer</li>
-          <li>Usability Tester</li>
-          <li>Visual Designer</li>
-        </ul>
-        <h4 class="margin-fix">Deliverables</h4>
-        <ul>
-          <li>Competitive Analysis</li>
-          <li>User Personas</li>
-          <li>User Stories</li>
-          <li>User Flows</li>
-          <li>Wireframes</li>
-          <li>Branding</li>
-          <li>User Testing</li>
-          <li>Prototypes</li>
-        </ul>
-        <h4 class="margin-fix">Tools Used</h4>
-        <ul>
-          <li>Google Forms</li>
-          <li>Google Docs</li>
-          <li>Draw.io</li>
-          <li>Figma</li>
-          <li>Photoshop</li>
-          <li>Illustrator</li>
-          <li>InVision</li>
-          <li>Maze</li>
-          <li>UsabilityHub</li>
-        </ul>
-        <h4 class="margin-fix">Duration</h4>
-        <ul>
-          <li>3 months</li>
-        </ul>
+      <!-- brief specifications -->
+      <section class="specifications">
+        <div class="specifications-info">
+          <div class="roles-grid">
+            <h4 class="margin-fix">Roles</h4>
+              <ul>
+                <li>Researcher</li>
+                <li>Content Producer</li>
+                <li>Usability Tester</li>
+                <li>Visual Designer</li>
+              </ul>
+              <h4 class="margin-fix">Duration</h4>
+              <ul>
+                <li>3 months</li>
+              </ul>
+          </div>
+          <div class="deliverables-grid">
+            <h4 class="margin-fix">Deliverables</h4>
+            <ul>
+              <li>Competitive Analysis</li>
+              <li>User Personas</li>
+              <li>User Stories</li>
+              <li>User Flows</li>
+              <li>Wireframes</li>
+              <li>Branding</li>
+              <li>User Testing</li>
+              <li>Prototypes</li>
+            </ul>
+          </div>
+          <div class="tools-grid">
+            <h4 class="margin-fix">Tools Used</h4>
+            <ul>
+              <li>Google Forms</li>
+              <li>Google Docs</li>
+              <li>Draw.io</li>
+              <li>Figma</li>
+              <li>Photoshop</li>
+              <li>Illustrator</li>
+              <li>InVision</li>
+              <li>Maze</li>
+              <li>UsabilityHub</li>
+            </ul>
+          </div>
+        </div>
       </section>
+      <!-- end brief specifications -->
 
-      <section class="research grid-research">
+      <hr>
+
+      <!-- side litte image -->
+      <div data-aos="flip-left" class="process-icons">
         <img src="./media/images/strategy.svg" class="icon-process" alt="Strategy">
-        <!-- <h5>Strategy</h5> -->
-        <h3>Research</h3>
+        <h5 class="hide">Strategy</h5>
+      </div>
+      <!-- end side litte image -->
+
+      <!-- user research -->
+      <section class="research">
+        <h3>The User Research</h3>
         <p>To get to know the user, <strong>I used a survey</strong> as a method to do the primary user research. My main focus was to <strong>know the user’s priorities</strong> when using a storage service, as well as <strong>features they like or dislike,</strong> and how this web app could <strong>help them in their everyday life.</strong></p>
         <p><strong>These were some of the findings:</strong></p>
       </section>
+      <!-- end user research -->
 
+      <!-- percentages -->
       <section class="percentages">
-        <p><span>51%</span> Use for personal or professional reasons.</p>
-        <p class="right"><span>52%</span> Create documents and spreadsheets.</p>
-        <p><span>100%</span> Collaborate by sharing a link.</p>
-        <p class="right"><span>38%</span> Organize content by categories, tags or folders.</p>
+        <p class="left"><span>51%</span> Use for personal or professional reasons.</p>
+        <p class="center"><span>52%</span> Create documents and spreadsheets.</p>
+        <p class="right"><span>100%</span> Collaborate by sharing a link.</p>
+        <p class="left"><span>38%</span> Organize content by categories, tags or folders.</p>
         <p><span>71%</span> Collaborate with families or co-workers.</p>
         <p class="right"><span>71%</span> Upload and stores videos or files.</p>
       </section>
+      <!-- end percentages -->
 
-      <a href="#" class="button">Survey and Analysis</a>
+      <!-- action button -->
+      <a href="https://docs.google.com/document/d/1vNZxOUDmIlzkPSZFgUyalR1bnaVAZXTQgrbBdu_pglo/edit?usp=sharing" target="_blank" class="button">Read Survey Analysis</a>
+      <!-- end action button -->
 
+      <!-- takeaways -->
       <section class="takeaways">
-        <h3>Takeaways</h3>
-        <p>At the end of this research, I discovered that the potential user was someone that was <strong>experienced in using a cloud application.</strong> I also learned that the user is a <strong>frequent user</strong> of this kind service to accomplish their needs.</p>
+        <div class="takeaways-info">
+          <h3>Takeaways</h3>
+          <p>At the end of this research, I discovered that the potential user was someone that was <strong>experienced in using a cloud application.</strong> I also learned that the user is a <strong>frequent user</strong> of this kind service to accomplish their needs.</p>
+        </div>
       </section>
+      <!-- end takeaways -->
 
-      <section class="competitive-analysis grid-competitive-analysis">
+      <hr>
+
+      <!-- side litte image -->
+      <div data-aos="flip-left" class="process-icons">
         <img src="./media/images/strategy.svg" class="icon-process" alt="Strategy">
-        <!-- <h5>Strategy</h5> -->
+        <h5 class="hide">Strategy</h5>
+      </div>
+      <!-- end side litte image -->
+
+      <!-- competitive analysis -->
+      <section class="competitive-analysis">
         <h3>Competitive Analysis</h3>
         <p>To have a <strong>better understanding of the strength and weaknesses of the competition,</strong> I conducted a competitive analysis. I spent quiet some time here because I wanted to know what made these services so popular, besdies their name reconigtion. These three competitors were analyzed:</p>
-
-        <img src="./media/images/google-drive-logo.jpg" class="icon-process competitors-logo" alt="Google Drive Logo">
-        <p><strong>Google Drive</strong> integrates all their services into the cloud app, but because of the amount of those services, <strong>users can get easily confused.</strong> One of the advantages that was discovered was how <strong>easy is to find any file and how easy was to collaborate.</strong></p>
-
-        <img src="./media/images/dropbox-logo.svg" class="icon-process competitors-logo" alt="Dropbox Logo">
-        <p><strong>Dropbox</strong> I found to be very easy to use and its integration with the user’s desktop made it a “plus” feature. On the downside, it doesn't have a built-in spreadsheet creator and the <strong>functions are not consistent across devices.</strong></p>
-
-        <img src="./media/images/icloud-logo.jpg" class="icon-process competitors-logo" alt="iCloud Logo">
-        <p><strong>iCloud</strong> has a <strong>robust content organization feature</strong> (folder creation and color tagging), it also has a very integrated documents, presentations and spreadsheet creator. As a minus, the service <strong>is not seems very professional,</strong> since it gives the impression that is geared towards personal use rather than professional.</p>
+        <div class="c-analysis">
+          <div class="googledrive-logo">
+            <img src="./media/images/google-drive-logo.jpg" class="icon-process competitors-logo" alt="Google Drive Logo">
+          </div>
+          <div class="googledrive-txt">
+            <p><strong>Google Drive</strong> integrates all their services into the cloud app, but because of the amount of those services, <strong>users can get easily confused.</strong> One of the advantages that was discovered was how <strong>easy is to find any file and how easy was to collaborate.</strong></p>
+          </div>
+          <div class="dropbox-logo">
+            <img src="./media/images/dropbox-logo.svg" class="icon-process competitors-logo" alt="Dropbox Logo">
+          </div>
+          <div class="dropbox-logo-txt">
+            <p><strong>Dropbox</strong> I found to be very easy to use and its integration with the user’s desktop made it a “plus” feature. On the downside, it doesn't have a built-in spreadsheet creator and the <strong>functions are not consistent across devices.</strong></p>
+          </div>
+          <div class="icloud-logo">
+            <img src="./media/images/icloud-logo.jpg" class="icon-process competitors-logo" alt="iCloud Logo">
+          </div>
+          <div class="icloud-logo-txt">
+            <p><strong>iCloud</strong> has a <strong>robust content organization feature</strong> (folder creation and color tagging), it also has a very integrated documents, presentations and spreadsheet creator. As a minus, the service <strong>is not seems very professional,</strong> since it gives the impression that is geared towards personal use rather than professional.</p>
+          </div>
+        </div>
       </section>
+      <!-- end competitive analysis -->
 
-      <a href="#" class="button">Read Report</a>
+      <!-- action button -->
+      <a href="https://docs.google.com/document/d/1ya5C9FK6MPcopJ_S2sPwv9FE27mcWtpG9Kr-BCmeQxE/edit?usp=sharing" target="_blank" class="button">Read Report</a>
+      <!-- end action button -->
 
+      <!-- takeaways -->
       <section class="takeaways">
-        <h3>Takeaways</h3>
-        <p>By analyzing the competition, I could acquired the necessary knowledge of <strong>what regular users experience</strong> when using other applications, as well as what <strong>was missing or what could be enhanced</strong> for the client’s app.</p>
+        <div class="takeaways-info">
+          <h3>Takeaways</h3>
+          <p>By analyzing the competition, I could acquired the necessary knowledge of <strong>what regular users experience</strong> when using other applications, as well as what <strong>was missing or what could be enhanced</strong> for the client’s app.</p>
+        </div>
       </section>
+      <!-- end takeaways -->
 
-      <section class="personas grid-personas">
+      <hr>
+
+      <!-- side litte image -->
+      <div data-aos="flip-left" class="process-icons">
         <img src="./media/images/strategy.svg" class="icon-process" alt="Strategy">
-        <!-- <h5>Strategy</h5> -->
+        <h5 class="hide">Strategy</h5>
+      </div>
+      <!-- end side litte image -->
+
+      <!-- personas intro -->
+      <div class="personas-intro">
         <h3>User Personas</h3>
-        <p>Upon <strong>analyzing the user survey,</strong> it was time to <strong>bring empathy to this data.</strong> I accomplish this by crafting 3 different user personas.</p>
+        <p>Upon <strong>analyzing the user survey,</strong> it was time to <strong>bring empathy to this data.</strong> This was accomplished by crafting 3 different user personas.</p>
+      </div>
+      <!-- end personas intro -->
 
-        <img src="./media/images/mark-abernathy.jpg" class="persona-picture" alt="A picture of user persona Mark Abernathy">
-        <em>“I would like to store all my files in one place, access them anywhere and easily find them”</em>
-        <h3>Mark Abernathy</h3>
-        <p>32 years old<br>
-        <strong>Assistant Video Editor</strong></p>
-        <h4>Motivations</h4>
-        <p>Mark stores a lot of video clips and photos. He also collaborates with others when writing scripts and sends photos to his clients for approval. However, he does not have a lot of storage capacity because is not affordable. Because of this, he finds himself storing some files in his other Dropbox account. He is a visual person, and feels frustrated that he can't tag his videos or notes by color for easy identification in any of his storage solutions. He would like to have one economical, large capacity storage solution where he can sync all of his files and organize them in folders.</p>
-        <h4>Goals</h4>
-        <ul>
-          <li>Have a large capacity storage for all his data.</li>
-          <li>Create folders, and tag files and notes by color.</li>
-          <li>Save or create a file and see it on all his devices.</li>
-          <li>Collaborate with other.</li>
-        </ul>
-        <h4>Frustrations</h4>
-        <ul>
-          <li>Can’t easily identify his videos or notes.</li>
-          <li>Low capacity cloud solution.</li>
-          <li>Has to keep two accounts for capacity reasons.</li>
-        </ul>
+      <!-- personas -->
+      <section class="personas">
+        <div class="persona-1">
+          <img src="./media/images/mark-abernathy.jpg" class="persona-picture" alt="A picture of user persona Mark Abernathy">
+          <em>“I would like to store all my files in one place, access them anywhere and easily find them”</em>
+          <h3>Mark Abernathy</h3>
+          <p>32 years old<br>
+          <strong>Assistant Video Editor</strong></p>
+          <h4>Motivations</h4>
+          <p>Mark stores a lot of video clips and photos. He also collaborates with others when writing scripts and sends photos to his clients for approval. However, he does not have a lot of storage capacity because is not affordable. Because of this, he finds himself storing some files in his other Dropbox account. He is a visual person, and feels frustrated that he can't tag his videos or notes by color for easy identification in any of his storage solutions. He would like to have one economical, large capacity storage solution where he can sync all of his files and organize them in folders.</p>
+          <h4>Goals</h4>
+          <ul>
+            <li>Have a large capacity storage for all his data.</li>
+            <li>Create folders, and tag files and notes by color.</li>
+            <li>Save or create a file and see it on all his devices.</li>
+            <li>Collaborate with other.</li>
+          </ul>
+          <h4>Frustrations</h4>
+          <ul>
+            <li>Can’t easily identify his videos or notes.</li>
+            <li>Low capacity cloud solution.</li>
+            <li>Has to keep two accounts for capacity reasons.</li>
+          </ul>
+        </div>
 
-        <img src="./media/images/renee-palmer.jpg" class="persona-picture" alt="A picture of user persona Renee Palmer">
-        <em>“I need my devices to be easy to use and have all my assignments ready to share with my students”</em>
-        <h3>Renée Palmer</h3>
-        <p>45 years old<br>
-        <strong>Teacher</strong></p>
-        <h4>Motivations</h4>
-        <p>Renée uses Dropbox to plan all her classes and share some assignments with her students. Since she teaches many subjects, sometimes is difficult for her to understand the interface and create folders and organize all her courses. She also feels that her current cloud solution is slow when it comes to uploading high resolution pictures and videos and also syncing with her other devices. She would like to have a cloud solution that offers a easy way to create and see folders, and also that uploads and sync in all her devices instantly.</p>
-        <h4>Goals</h4>
-        <ul>
-          <li>To understand the interface to get things done.</li>
-          <li>To easily create folders to organize her projects.</li>
-          <li>To upload and sync her files quickly.</li>
-        </ul>
-        <h4>Frustrations</h4>
-        <ul>
-          <li>Spent too much time trying to find features.</li>
-          <li>Can’t create easily folders.</li>
-          <li>Can’t upload and sync fast.</li>
-        </ul>
+        <div class="persona-2">
+          <img src="./media/images/renee-palmer.jpg" class="persona-picture" alt="A picture of user persona Renee Palmer">
+          <em>“I need my devices to be easy to use and have all my assignments ready to share with my students”</em>
+          <h3>Renée Palmer</h3>
+          <p>45 years old<br>
+          <strong>Teacher</strong></p>
+          <h4>Motivations</h4>
+          <p>Renée uses Dropbox to plan all her classes and share some assignments with her students. Since she teaches many subjects, sometimes is difficult for her to understand the interface and create folders and organize all her courses. She also feels that her current cloud solution is slow when it comes to uploading high resolution pictures and videos and also syncing with her other devices. She would like to have a cloud solution that offers a easy way to create and see folders, and also that uploads and sync in all her devices instantly.</p>
+          <h4>Goals</h4>
+          <ul>
+            <li>To understand the interface to get things done.</li>
+            <li>To easily create folders to organize her projects.</li>
+            <li>To upload and sync her files quickly.</li>
+          </ul>
+          <h4>Frustrations</h4>
+          <ul>
+            <li>Spent too much time trying to find features.</li>
+            <li>Can’t create easily folders.</li>
+            <li>Can’t upload and sync fast.</li>
+          </ul>
+        </div>
       </section>
+      <!-- end personas -->
 
+      <!-- action button -->
       <a href="#" class="button">View Personas</a>
+      <!-- end action button -->
 
+      <!-- takeaways -->
       <section class="takeaways">
+        <div class="takeaways-info">
         <h3>Takeaways</h3>
         <p>By creating personas, I could think of them like real users, and throughout the project, and with every decision, I kept asking this question to myself: <strong>‘Would Mark like this feature?”, “Is this flow easy to Paula?”, “How would Renée accomplish this task?”</strong> Keeping these personas in mind helped me always think about the end user in preparation for the testing phase.</p>
+        </div>
       </section>
+      <!-- end takeaways -->
 
-      <section class="stories grid-stories">
+      <hr>
+
+      <!-- side litte image -->
+      <div data-aos="flip-left" class="process-icons">
         <img src="./media/images/information-architecture.svg" class="icon-process" alt="Information Architecture">
-        <!-- <h5>Information Architecture</h5> -->
+        <h5 class="hide">Information <br>Architecture</h5>
+      </div>
+      <!-- end side litte image -->
+
+      <!-- stories -->
+      <section class="stories-intro">
         <h3>User Stories</h3>
         <p>In order to <strong>design with the user’s perspective in mind,</strong> I moved on to create user stories based on the information collected on the user survey and also data from the personas. The priorities considered where for a new and returning user. I designed for all the high priorities and some medium and low priorities too.</p>
-
+      </section>
+      <section class="stories">
         <!-- table for user stories -->
         <div class="stories-wrapper">
           <p><strong>For new users</strong></p>
@@ -255,203 +377,347 @@
           <p>As a returning user I want to log in to my account</p>
           <p>As a returning user I want to recover my password</p>
         </div>
+        <!-- table for user stories -->
       </section>
+      <!-- end stories -->
 
-      <a href="#" class="button">See All Stories</a>
+      <!-- action button -->
+      <a href="https://docs.google.com/spreadsheets/d/10V9OdnJe48q6GzhhEg_WqikxXFwQHPClWbKJ-oL5IuM/edit?usp=sharing" target="_blank" class="button">See All Stories</a>
+      <!-- end action button -->
 
       <hr>
 
-      <section class="user-flows grid-user-flows">
+      <!-- side litte image -->
+      <div data-aos="flip-left" class="process-icons">
         <img src="./media/images/information-architecture.svg" class="icon-process" alt="Information Architecture">
-        <!-- <h5>Information Architecture</h5> -->
+        <h5 class="hide">Information<br>Architecture</h5>
+      </div>
+      <!-- end side litte image -->
+
+      <section class="user-flows">
         <h3>User Flows</h3>
         <p>To design an <strong>intuitive product,</strong> I designed user flows based on the user stories. This helped me think once more about the user and <strong>how they can accomplish their different tasks as simple as possible.</strong> Reviewing the competitive analysis helped me to refine and enhanced the flows of the more establish cloud storage apps that are known to users.</p>
         <img src="./media/images/user-flows.svg" alt="Example of three developed user flows">
       </section>
 
-      <a href="#" class="button">See all Flows</a>
+      <!-- action button -->
+      <a href="https://drive.google.com/file/d/18SLHQQHF38cEA-zV4GR8McOJJqMHQcOD/view?usp=sharing" target="_blank" class="button">See all Flows</a>
+      <!-- end action button -->
 
+      <!-- takeaways -->
       <section class="takeaways">
-        <h3>Takeaways</h3>
-        <p>I was at the beginning of the project a bit glued to follow the user stories ans flows just as I designed them. Only after the usability tests and seems real user interacting with the prototype, let me undertand that these are initial guides, and  even, though some flows changed I knew this change was dictated by the user and not by my own bias. Incorporating and being flexible in changing them <strong>helped me to deliver a more cohesive design.</strong></p>
+        <div class="takeaways-info">
+          <h3>Takeaways</h3>
+          <p>I was at the beginning of the project a bit glued to follow the user stories ans flows just as I designed them. Only after the usability tests and seems real user interacting with the prototype, let me undertand that these are initial guides, and  even, though some flows changed I knew this change was dictated by the user and not by my own bias. Incorporating and being flexible in changing them <strong>helped me to deliver a more cohesive design.</strong></p>
+        </div>
       </section>
+      <!-- end takeaways -->
 
-      <section class="wireframes grid-wireframes">
+      <hr>
+
+      <!-- side litte image -->
+      <div data-aos="flip-left" class="process-icons">
         <img src="./media/images/information-architecture.svg" class="icon-process" alt="Information Architecture">
-        <!-- <h5>Information Architecture</h5> -->
+        <h5 class="hide">Information <br>Architecture</h5>
+      </div>
+      <!-- end side litte image -->
+
+      <!-- wireframes -->
+      <section class="wireframes">
         <h3>Wireframes Design and Testing</h3>
         <p>Finalized the user flows, it was <strong>time to start putting the research into a design.</strong> I first sketched the different screens on paper, and drew them on the computer. After all the screens were done, I <strong>performed the first usability test to see how this attempt performed.</strong></p>
+      </section>
+      <!-- end wireframes -->
 
-        <img src="./media/images/sketch-1.jpg" alt="Initial sketch of dashboard and tagging action">
-        <p>Fig. Sketches of dashboard and tagging action</p>
-
-        <img src="./media/images/sketch-2.jpg" alt="Sign in Process wireframes">
-        <p>Fig. Sketches of sign in process</p>
-
-        <img src="./media/images/digital-wireframe-1.jpg" alt="Wireframe showing the process of uploading an image">
-        <p>Fig. Wireframe of the process to upload an image</p>
-
-        <img src="./media/images/digital-wireframe-2.jpg" alt="Wireframe showing sign up page">
-        <p>Fig. Wireframe of the sign up page</p>
+      <section class="jumbotron">
+        <img src="./media/images/hand-sketches.jpg" class="high-prototype-picture" alt="Cloudspring Dashboard image showing All Files">
+        <p>Fig. Dashboard showing "All Files"</p>
       </section>
 
+      <!-- wireframes images -->
+      <div class="wireframes-images">
+
+        <!-- <div class="sketch-2">
+          <img src="./media/images/sketch-2.jpg" alt="Sign in Process wireframes">
+          <p>Fig. Sketches of sign in process</p>
+        </div> -->
+        <div class="sketch-3">
+          <img src="./media/images/digital-wireframe-1.jpg" alt="Wireframe showing the process of uploading an image">
+          <p>Fig. Wireframe of the process to upload an image</p>
+        </div>
+        <div class="sketch-4">
+          <img src="./media/images/digital-wireframe-2.jpg" alt="Wireframe showing sign up page">
+          <p>Fig. Wireframe of the sign up page</p>
+        </div>
+      </div>
+      <!-- end wireframes images -->
+
+      <!-- action button -->
       <a href="#" class="button">All wireframes</a>
+      <!-- end action button -->
 
       <hr>
 
-      <section class="wireframes-changes grid-wireframes-changes">
+      <!-- wireframe changes -->
+      <section class="wireframes-changes">
         <h3>Changes Made After the Usability Test</h3>
         <p>It was a challenge to see the user picking apart the design. <strong>In some cases the accomplished the task I handed to them,</strong> and in some other cases <strong>they just got stuck</strong> (Like in the where a user was trying to log in for the first time with his password). I listened closely and watched them, and iterated on the design to remove these friction points.</p>
-
-        <img src="./media/images/retrieve-code.jpg" alt="Code retrieval screen">
-        <h4>Where to retrive the code?</h4>
-        <p>Users where confuse on where they were suppose to retrieve this code. Was it on the email? Some of them asked me if they were suppose to receive the code on their phones as a text message. <strong>To resolve the issue, I added the option of receeiving the code on their email or as a text message.</strong></p>
-
-        <img src="./media/images/icons-sidebar.jpg" alt="Dashboard showing the need to add icons on the sidebar">
-        <h4>Icons on the sidebar</h4>
-        <p>While I was watching the user interacting with the sidebar, I noticed that they were slowing down a bit to read the buttons. I knew righ away that <strong>one option to aid the user was to add icons next to the buttons.</strong> I was opposed to doing that because I wanted to keep the UI as clean as possible. Nonetheless, the isssue persisted with the other user and I had to perform a preference test <a href="index.html">(As will be shown later).</a> The result was that <strong>people overwhelmed prefered icons.</strong> This was an opportunity for me to listen to the users.</p>
-
-        <img src="./media/images/tour-interface.jpg" alt="Dasboard showing the need to add tour the interface">
-        <h4>"Tour the Interface"</h4>
-        <p>Upon arriving to “home” after signing up, some user where confuse about the UI. I <strong>added a message for the empty state</strong> as a starting point for the new user so they can get familiar with the app.</p>
-
-        <img src="./media/images/tags.jpg" alt="Dasboard showing the need to rethink the spelling of tag">
-        <h4>Label "Tags" was confusing</h4>
-        <p>Some user did not know what “Tags” mean. They where looking everywhere on the interface to complete the task of tagging an item. <strong>I had to apply restrain to me in the sense that I wanted to help them out,</strong> but I knew what was the problem right away when an user expressed that “tagged” sounds more like a buttom that they would click.</p>
-
-        <img src="./media/images/x-on-modals.jpg" alt="Dasboard showing the need to add an X to close modals">
-        <h4>"X" to close modals</h4>
-        <p>For my surprise, <strong>user could not close the modals, because for an oversight I did not add a way fo the user to close the modals.</strong> I assumed that they would complete the action. When I saw them stuck on that state, I knew that for the next iteration <strong>I had to add an “X” to indicate that the modal can be closed without completing the action.</strong> Later on I opted for a “Cancel” buttom to accomplish the same action.</p>
       </section>
+      <!-- end wireframe changes -->
 
+      <!-- wireframe changes images -->
+      <div data-aos="fade-up" class="wireframes-changes-grid">
+        <div class="wireframes-change-1-img">
+          <img src="./media/images/retrieve-code.jpg" alt="Code retrieval screen">
+<p>replay</p>
+        </div>
+        <div class="wireframes-change-1-txt">
+          <h4>Where to retrive the code?</h4>
+          <p>Users where confuse on where they were suppose to retrieve this code. Was it on the email? Some of them asked me if they were suppose to receive the code on their phones as a text message. <strong>To resolve the issue, I added the option of receeiving the code on their email or as a text message.</strong></p>
+        </div>
+        <div class="wireframes-change-2-img">
+          <img src="./media/images/icons-sidebar.jpg" alt="Dashboard showing the need to add icons on the sidebar">
+        </div>
+        <div class="wireframes-change-2-txt">
+          <h4>Icons on the sidebar</h4>
+          <p>While I was watching the user interacting with the sidebar, I noticed that they were slowing down a bit to read the buttons. I knew righ away that <strong>one option to aid the user was to add icons next to the buttons.</strong> I was opposed to doing that because I wanted to keep the UI as clean as possible. Nonetheless, the isssue persisted with the other user and I had to perform a preference test <a href="index.html">(As will be shown later).</a> The result was that <strong>people overwhelmed prefered icons.</strong> This was an opportunity for me to listen to the users.</p>
+        </div>
+        <div class="wireframes-change-3-img">
+          <img src="./media/images/tour-interface.jpg" alt="Dasboard showing the need to add tour the interface">
+        </div>
+        <div class="wireframes-change-3-txt">
+          <h4>"Tour the Interface"</h4>
+          <p>Upon arriving to “home” after signing up, some user where confuse about the UI. I <strong>added a message for the empty state</strong> as a starting point for the new user so they can get familiar with the app.</p>
+        </div>
+        <div class="wireframes-change-4-img">
+          <img src="./media/images/tags.jpg" alt="Dasboard showing the need to rethink the spelling of tag">
+        </div>
+        <div class="wireframes-change-4-txt">
+          <h4>Label "Tags" was confusing</h4>
+          <p>Some user did not know what “Tags” mean. They where looking everywhere on the interface to complete the task of tagging an item. <strong>I had to apply restrain to me in the sense that I wanted to help them out,</strong> but I knew what was the problem right away when an user expressed that “tagged” sounds more like a buttom that they would click.</p>
+        </div>
+        <div class="wireframes-change-5-img">
+          <img src="./media/images/x-on-modals.jpg" alt="Dasboard showing the need to add an X to close modals">
+        </div>
+        <div class="wireframes-change-5-txt">
+          <h4>"X" to close modals</h4>
+          <p>For my surprise, <strong>user could not close the modals, because for an oversight I did not add a way fo the user to close the modals.</strong> I assumed that they would complete the action. When I saw them stuck on that state, I knew that for the next iteration <strong>I had to add an “X” to indicate that the modal can be closed without completing the action.</strong> Later on I opted for a “Cancel” buttom to accomplish the same action.</p>
+        </div>
+      </div>
+      <!-- end wireframe changes images -->
+
+      <!-- action button -->
       <a href="#" class="button">Watch the videos</a>
+      <!-- action button -->
 
+      <!-- takeaways -->
       <section class="takeaways">
-        <h3>Takeaways</h3>
-        <p>The feedback garthered after the usability test was invaluable. It let me evaluate some of my ideas and see if they work in <strong>some cases they did, in others, they were not good</strong> at all, and I even discovered some mistakes. <strong>This feedback let me push the design forward.</strong></p>
+        <div class="takeaways-info">
+          <h3>Takeaways</h3>
+          <p>The feedback garthered after the usability test was invaluable. It let me evaluate some of my ideas and see if they work in <strong>some cases they did, in others, they were not good</strong> at all, and I even discovered some mistakes. <strong>This feedback let me push the design forward.</strong></p>
+        </div>
       </section>
-
-      <section class="high-prototype grid-high-prototype">
-        <img src="./media/images/information-architecture.svg" class="icon-process" alt="Information Architecture">
-        <!-- <h5>Information Architecture</h5> -->
-        <h3>High Fidelity Prototype Design and Testing</h3>
-        <p>To <strong>implement the findings of the usability test,</strong> and to apply the branding, I created a high fidelity prototype that I could further test with users.</p>
-        <p>One of the challenges I had to overcome during the low-fi prototype and if I did not corrected was the way I designed the prototype was a bit confuse to the user because there where so many screens, if the user made an unexpected decision, they next screen could be something that they were not expecting. <strong>I overcame this issue by re-assembling the prototype and made the flow simpler and linear.</strong></p>
-
-        <img src="./media/images/dashboard.jpg" class="high-prototype-picture" alt="Cloudspring Dashboard image showing All Files">
-        <p>Dashboard showing "All Files"</p>
-
-        <img src="./media/images/new-modal.jpg" class="high-prototype-picture" alt="Dashboard showing new modal">
-        <p>"New" modal activated</p>
-
-        <img src="./media/images/download-to-modal.jpg" class="high-prototype-picture" alt="Dashboard showing download to modal">
-        <p>"Download To" modal</p>
-
-        <img src="./media/images/choose-plan.jpg" class="high-prototype-picture" alt="Screenshot of choosing your plan iteraction">
-        <p>"Choose Your New Plan" screen</p>
-
-        <img src="./media/images/choose-plan.jpg" class="high-prototype-picture" alt="Cloudspring Dashboard image showing All Files">
-        <p>"Tag a Folder" action</p>
-      </section>
+      <!-- takeaways -->
 
       <hr>
 
-      <section class="high-prototype-changes grid-high-prototype-changes">
+      <!-- side litte image -->
+      <div data-aos="flip-left" class="process-icons">
+        <img src="./media/images/information-architecture.svg" class="icon-process" alt="Information Architecture">
+        <h5 class="hide">Information <br>Architecture</h5>
+      </div>
+      <!-- end side litte image -->
+
+      <section class="high-prototype">
+        <h3>High Fidelity Prototype Design</h3>
+        <p>To <strong>implement the findings of the usability test,</strong> and to apply the branding, I created a high fidelity prototype that I could further test with users.</p>
+        <p>One of the challenges I had to overcome during the low-fi prototype and if I did not corrected was the way I designed the prototype was a bit confuse to the user because there where so many screens, if the user made an unexpected decision, they next screen could be something that they were not expecting. <strong>I overcame this issue by re-assembling the prototype and made the flow simpler and linear.</strong></p>
+      </section>
+
+      <section class="jumbotron">
+        <img src="./media/images/dashboard.jpg" class="high-prototype-picture" alt="Cloudspring Dashboard image showing All Files">
+        <p>Fig. Dashboard showing "All Files"</p>
+      </section>
+
+      <div class="wireframes-images">
+        <div class="sketch-1">
+          <img src="./media/images/hifi-1.jpg" class="high-prototype-picture" alt="Cloudspring Dashboard image showing All Files">
+          <p>Fig. Dashboard showing "All Files"</p>
+        </div>
+        <div class="sketch-2">
+          <img src="./media/images/hifi-2.jpg" class="high-prototype-picture" alt="Dashboard showing new modal">
+          <p>Fig. "New" modal activated</p>
+        </div>
+        <div class="sketch-3">
+          <img src="./media/images/hifi-3.jpg" class="high-prototype-picture" alt="Dashboard showing download to modal">
+          <p>Fig. "Download To" modal</p>
+        </div>
+        <div class="sketch-4">
+          <img src="./media/images/hifi-4.jpg" class="high-prototype-picture" alt="Cloudspring Dashboard image showing All Files">
+          <p>Fig. "Tag a Folder" action</p>
+        </div>
+      </div>
+
+      <!-- action button -->
+      <a href="#" class="button">All High-Fi Wireframes</a>
+      <!-- action button -->
+
+      <hr>
+
+      <section  class="high-prototype-changes">
         <h3>Changes Made After the High Fidelity Prototype Usability Test</h3>
         <p>To discover what was working after some iteration of the design, I performed a series of usability test on the high fidelity prototype. I conducted 2 remote testings over Skype and 1 in-person test. Following, the changes implemented:</p>
-
-        <img src="./media/images/heading-home.jpg" class="high-prototype-changes-picture" alt="Dashboard showing the need to change home to all files">
-        <h4>From "Home" to "My Files"</h4>
-        <p>Some users were confused with the heading “Home” on the dashboard and also on the left-side panel. I changed it to read “My files”.</p>
-
-        <img src="./media/images/modal-separation.jpg" class="high-prototype-changes-picture" alt="Dashboard showing the need to separate the modal from the background">
-        <h4>Separation between modal and background</h4>
-        <p>When in front of a modal, some user did not realize the background was not clickable. A solution was to make the modal’s background a bit darker to establish separation.</p>
-
-        <img src="./media/images/upload-to.jpg" class="high-prototype-changes-picture" alt="Modal showing the need to add a new folder option">
-        <h4>"New Folder" option when Uploading</h4>
-        <p>During uploading, user expressed that they wanted to have an option of creating a new folder to place what they are uploading inside it.</p>
-
-        <img src="./media/images/password-strength.jpg" class="high-prototype-changes-picture" alt="Screen showing the need to add a password strength indicator">
-        <h4>Password strength indicator</h4>
-        <p>During onboarding, an user expressed that he would feel more comfortable if he can get suggestion or an indication of how strong his password.</p>
       </section>
+
+        <div data-aos="fade-up" class="wireframes-changes-grid">
+          <div class="wireframes-change-1-img">
+            <img src="./media/images/heading-home.jpg" class="high-prototype-changes-picture" alt="Dashboard showing the need to change home to all files">
+          </div>
+
+          <div class="wireframes-change-1-txt">
+            <h4>From "Home" to "My Files"</h4>
+            <p>Some users were confused with the heading “Home” on the dashboard and also on the left-side panel. I changed it to read “My files”.</p>
+          </div>
+
+          <div class="wireframes-change-2-img">
+            <img src="./media/images/modal-separation.jpg" class="high-prototype-changes-picture" alt="Dashboard showing the need to separate the modal from the background">
+          </div>
+
+          <div class="wireframes-change-2-txt">
+            <h4>Separation between modal and background</h4>
+            <p>When in front of a modal, some user did not realize the background was not clickable. A solution was to make the modal’s background a bit darker to establish separation.</p>
+          </div>
+
+          <div class="wireframes-change-3-img">
+            <img src="./media/images/upload-to.jpg" class="high-prototype-changes-picture" alt="Modal showing the need to add a new folder option">
+          </div>
+
+          <div class="wireframes-change-3-txt">
+            <h4>"New Folder" option when Uploading</h4>
+            <p>During uploading, user expressed that they wanted to have an option of creating a new folder to place what they are uploading inside it.</p>
+          </div>
+
+          <div class="wireframes-change-4-img">
+            <img src="./media/images/password-strength.jpg" class="high-prototype-changes-picture" alt="Screen showing the need to add a password strength indicator">
+          </div>
+
+          <div class="wireframes-change-4-txt">
+            <h4>Password strength indicator</h4>
+            <p>During onboarding, an user expressed that he would feel more comfortable if he can get suggestion or an indication of how strong his password.</p>
+          </div>
+        </div>
 
         <a href="#" class="button">Watch the videos</a>
 
         <hr>
 
-      <section class="remote-test grid-remote-test">
+      <section class="remote-test">
         <h3>High Fidelity Prototype Remote Test</h3>
         <p>Supplementary to the previous user testing, I conducted a remote task for testers to <strong>validate that the user could complete their tasks on their own.</strong> After the test, I was found out that all the given tasks evaluated to more than 90% success. However, I discovered that during the “create document mission”, <strong>users were having difficulty in closing the document.</strong> I implemented a change by adding an “X” to falicitate that action.</p>
-
-        <img src="./media/images/heatmap-test.jpg" alt="Screens showing the heatmap of the user interacting with the document">
-        <p>Heatmap showing the user trying to locate an "Exit" button</p>
-
       </section>
+
+      <div class="wireframes-images">
+        <div class="sketch-1">
+          <img src="./media/images/heatmap-1.jpg" class="high-prototype-picture" alt="Cloudspring Dashboard image showing All Files">
+          <p>Fig. Dashboard showing "All Files"</p>
+        </div>
+        <div class="sketch-2">
+          <img src="./media/images/heatmap-2.jpg" class="high-prototype-picture" alt="Dashboard showing new modal">
+          <p>Fig. "New" modal activated</p>
+        </div>
+      </div>
 
       <a href="#" class="button">See Results</a>
 
       <section class="takeaways">
-        <h3>Takeaways</h3>
-        <p>After all these feedback, I was able to further refined the product and make it more user-centric. One of the ideas that I had with this project, was that I wanted the design to be easy to undertand and I wanted the user to have somewhat the same experience as it she was using the desktop.</p>
-      </section>
-
-      <section class="branding grid-branding">
-        <img src="./media/images/visual-design.svg" class="icon-process" alt="Branding">
-        <!-- <h5>Branding</h5> -->
-        <h3>Branding</h3>
-        <p>To start infusing personality to the brand, I started brainstorming some <strong>names that can create a connection to the main users.</strong> I also used mindmapping to help me funnel the different ideas that were coming to my mind. I settle on the idea of a spring coil and a cloud. Spring coil <strong>evoking the storage of energy and the fast or controlled release of it,</strong> and the cloud to use it as an anchor of the idea that the <strong>files can be accessed easily anywhere.</strong> To get to the logo, I <strong>studied the shape</strong> of a spring coil and a cloud. I did not want the logo to be too literal, but a nod to the components, since the name “Cloudsping”, has the meaning on it.</p>
-
-        <h4>Logo Mindmaps and Sketches</h4>
-        <img src="./media/images/sketches-mindmaps.jpg" alt="Logo Mindmaps and Sketches">
-
-        <h4>Moodboard</h4>
-        <img src="./media/images/moodboard.jpg" alt="Moodboard for brand inspiration">
-
-        <h4>Style Guide</h4>
-        <img src="./media/images/styleguide.jpg" alt="Style Guide for the Brand">
-
-        <a href="#" class="button grid-button">See Style Guide</a>
-
-        <h4>Typography</h4>
-        <p>The main typography has a rounded feeling, going well with the rounded feel of the icon. The chosen colors are blue (meaning <strong>inspiration, creativity and intelligence)</strong> and gray (balance, neutral). The supported icons also have a rounded feeling, playing very well with the brand. I think the approach can work very well since <strong>the user will get used to see the logo and will remember its meaning</strong> and associated it with the cloud storage solution.</p>
-        <img src="./media/images/cloudspring-typography.jpg" alt="Style Guide for the Typography">
-        <!-- <p>The two typefaces showing a variety of fonts</p> -->
+        <div class="takeaways-info">
+          <h3>Takeaways</h3>
+          <p>After all these feedback, I was able to further refined the product and make it more user-centric. One of the ideas that I had with this project, was that I wanted the design to be easy to undertand and I wanted the user to have somewhat the same experience as it she was using the desktop.</p>
+        </div>
       </section>
 
       <hr>
 
-      <section class="preference-test grid-preference-test">
+      <div data-aos="flip-left" class="process-icons">
         <img src="./media/images/visual-design.svg" class="icon-process" alt="Branding">
-        <!-- <h5>Branding</h5> -->
+        <h5 class="hide">Branding</h5>
+      </div>
+
+      <section class="branding">
+        <h3>Branding</h3>
+        <p>To start infusing personality to the brand, I started brainstorming some <strong>names that can create a connection to the main users.</strong> I also used mindmapping to help me funnel the different ideas that were coming to my mind. I settle on the idea of a spring coil and a cloud. Spring coil <strong>evoking the storage of energy and the fast or controlled release of it,</strong> and the cloud to use it as an anchor of the idea that the <strong>files can be accessed easily anywhere.</strong> To get to the logo, I <strong>studied the shape</strong> of a spring coil and a cloud. I did not want the logo to be too literal, but a nod to the components, since the name “Cloudsping”, has the meaning on it.</p>
+          <h4>Logo Mindmaps and Sketches</h4>
+          <img src="./media/images/sketches-mindmaps.jpg" alt="Logo Mindmaps and Sketches">
+
+          <h4>Moodboard</h4>
+          <img src="./media/images/moodboard.jpg" alt="Moodboard for brand inspiration">
+
+          <h4>Style Guide</h4>
+          <img src="./media/images/styleguide.jpg" alt="Style Guide for the Brand">
+
+          <!-- <a href="#" class="button grid-button">See Style Guide</a> -->
+
+          <h4>Typography</h4>
+          <p>The main typography has a rounded feeling, going well with the rounded feel of the icon. The chosen colors are blue (meaning <strong>inspiration, creativity and intelligence)</strong> and gray (balance, neutral). The supported icons also have a rounded feeling, playing very well with the brand. I think the approach can work very well since <strong>the user will get used to see the logo and will remember its meaning</strong> and associated it with the cloud storage solution.</p>
+          <img src="./media/images/cloudspring-typography.jpg" alt="Style Guide for the Typography">
+          <!-- <p>The two typefaces showing a variety of fonts</p> -->
+      </section>
+
+      <hr>
+
+      <div data-aos="flip-left" class="process-icons">
+        <img src="./media/images/visual-design.svg" class="icon-process" alt="Branding">
+        <h5 class="hide">Branding</h5>
+      </div>
+
+      <section class="preference-test">
         <h3>Prototype Preference Test</h3>
         <p>Before releasing the prototype for another round of tests, I performed a preference test on 3 components. This is where I had to listen to the user when they decided that icons on the sidebar made for a better experience.</p>
+      </section>
 
-        <h4>Icons on Sidebar</h4>
-        <img src="./media/images/icons-sidebar-1.jpg" alt="Branding">
-        <p><span class="approved">83%</span> Preferred sidebar with icons.</p>
-        <img src="./media/images/icons-sidebar-2.jpg" alt="Branding">
+      <section class="preference-test-grid">
+
+        <!-- <h4>Icons on Sidebar</h4> -->
+
+        <div class="preference-a">
+          <img src="./media/images/preference-1.jpg" alt="Branding">
+          <p><span class="approved">83%</span> Preferred sidebar with icons.</p>
+        </div>
+
+        <div class="preference-b">
+        <img src="./media/images/preference-2.jpg" alt="Branding">
         <p><span>17%</span> Preferred sidebar with no icons.</p>
+        </div>
 
-        <h4>Selecting an Item</h4>
+
+        <!-- <h4>Selecting an Item</h4> -->
+
+        <div class="preference-c">
         <img src="./media/images/select-item-2.jpg" alt="Branding">
         <p><span class="approved">54%</span> Preferred squared selection.</p>
         <img src="./media/images/select-item-1.jpg" alt="Branding">
         <p><span>46%</span> Preferred name highlighted.</p>
+        </div>
 
-        <h4>Picture Placement</h4>
+        <!-- <h4>Picture Placement</h4> -->
+
+        <div class="preference-d">
         <img src="./media/images/picture-placement-2.jpg" alt="Branding">
         <p><span class="approved">43%</span> Preferred picture on sidebar.</p>
         <img src="./media/images/picture-placement-1.jpg" alt="Branding">
         <p><span>40%</span> Preferred picture on left-top side.</p>
+        </div>
+
       </section>
 
       <hr>
 
-      <section class="product-highlights grid-product-highlights">
+      <div data-aos="flip-left" class="process-icons">
         <img src="./media/images/highlight.svg" class="icon-process" alt="Product highlights">
-        <!-- <h5>Highlights</h5> -->
+        <h5 class="hide">Product <br>Highlights</h5>
+      </div>
+
+      <section class="product-highlights">
         <h3>Product Highlights</h3>
         <p>At the conclusion of this project, <strong>everything the client asked for was delivered:</strong></p>
         <br />
@@ -464,39 +730,76 @@
           <li>Sharing a folder or group of items with someone else (and vice-versa).</li>
           <li>Connecting with other users for real-time collaboration in notes or documents.</li>
         </ul>
-
-        <img src="./media/images/homepage-video.jpg" alt="Animation of the Homepage">
-        <h4>Homepage</h4>
-        <p>The design of the homepage is clean ant tries to guide the user to sign up for one of the options after giving a tour of all the benefits of the service.</p>
-
-        <img src="./media/images/new-document.jpg" alt="Animation of a New Document">
-        <h4>New Document</h4>
-        <p>Since one of the requisites of the project was to have a document creation option, this was provided with the most easy-to-do interface. Focusing also on sharing and collaboration, which according to the client’s guidelines and the research performed, were very important.</p>
-
-        <img src="./media/images/upload-file.jpg" alt="Animation of Uploading a File">
-        <h4>Upload a File</h4>
-        <p>The application is not only expected to be a place where users create, but also facilitate when users upload data. This we provide by a easy-to-follow interaction.</p>
-
-        <img src="./media/images/collaboration.jpg" alt="Animation of Collaboration">
-        <h4>Collaboration</h4>
-        <p>The oportunity to collaborate on any kind of file is supplied by an easy user experience: Just check a box, procide the medium to alert the guest, set some security measure, and the process is done.</p>
-
-        <img src="./media/images/tagging.jpg" alt="Animation of Tagging">
-        <h4>Tagging</h4>
-        <p>Is expected that the user of this app comes many times to share, store and collaborate. To rein-in all the expected data, the easy tagging system would make finding any file a very pleasant experience.</p>
-
-        <img src="./media/images/sharing.jpg" alt="Animation of Sharing">
-        <h4>Sharing</h4>
-        <p>Sharing is not only expected by the user, but also encouraged by the app. Everytime the user want to perform an action, she can fill confident that will have the opportunity to share that file with others.</p>
       </section>
 
-      <a href="#" class="button">View Prototype</a>
+        <div data-aos="fade-up" class="wireframes-changes-grid">
 
-      <section class="what-learned grid-what-learned">
-        <h2>What I learned</h2>
-        <p>This project was an excellent experience. At the beginning of the project, and while it was progressing, one of the things that was difficult to me was to <strong>see the whole picture:</strong> I could not grasp how one process would connect to the other, but now at the conclusion of the project, I can <strong>clearly see how all the pieces fit together, and anchor the project through the use of a stablish process in a good user experience.</strong> I also learned to “trust the process”, not just make decisions based on what I think looks good or feels right, but to <strong>consult the user at any stage of the project,</strong> and see if it’s usable to them.</p>
-        <p>One of the things that surprised me during the testing phase was how I need to <strong>always keep in mind the user:</strong> Just because I know how something was designed or works, that does not mean the user will understand it easily.</p>
-        <p>Given more time, I would have liked to research a bit more the competition and also to spend more time testing other components of the design. I also would like to develop an app as a companion to the website. Even though I think </strong>this product delivers to the end user and the client,</strong> I believe that it could be improved further in future iterations.</p>
+        <div class="wireframes-change-1-img">
+          <img src="./media/images/homepage-video.jpg" alt="Animation of the Homepage">
+        </div>
+
+        <div class="wireframes-change-1-txt">
+          <h4>Homepage</h4>
+          <p>The design of the homepage is clean ant tries to guide the user to sign up for one of the options after giving a tour of all the benefits of the service.</p>
+        </div>
+
+        <div class="wireframes-change-2-img">
+          <img src="./media/images/new-document.jpg" alt="Animation of a New Document">
+        </div>
+
+        <div class="wireframes-change-2-txt">
+          <h4>New Document</h4>
+          <p>Since one of the requisites of the project was to have a document creation option, this was provided with the most easy-to-do interface. Focusing also on sharing and collaboration, which according to the client’s guidelines and the research performed, were very important.</p>
+        </div>
+
+
+        <div class="wireframes-change-3-img">
+          <img src="./media/images/upload-file.jpg" alt="Animation of Uploading a File">
+        </div>
+
+        <div class="wireframes-change-3-txt">
+          <h4>Upload a File</h4>
+          <p>The application is not only expected to be a place where users create, but also facilitate when users upload data. This we provide by a easy-to-follow interaction.</p>
+        </div>
+
+        <div class="wireframes-change-4-img">
+          <img src="./media/images/collaboration.jpg" alt="Animation of Collaboration">
+        </div>
+
+        <div class="wireframes-change-4-txt">
+          <h4>Collaboration</h4>
+          <p>The oportunity to collaborate on any kind of file is supplied by an easy user experience: Just check a box, procide the medium to alert the guest, set some security measure, and the process is done.</p>
+        </div>
+
+        <div class="wireframes-change-5-img">
+          <img src="./media/images/tagging.jpg" alt="Animation of Tagging">
+        </div>
+
+        <div class="wireframes-change-5-txt">
+          <h4>Tagging</h4>
+          <p>Is expected that the user of this app comes many times to share, store and collaborate. To rein-in all the expected data, the easy tagging system would make finding any file a very pleasant experience.</p>
+        </div>
+
+        <div class="wireframes-change-6-img">
+          <img src="./media/images/sharing.jpg" alt="Animation of Sharing">
+        </div>
+
+        <div class="wireframes-change-6-txt">
+          <h4>Sharing</h4>
+          <p>Sharing is not only expected by the user, but also encouraged by the app. Everytime the user want to perform an action, she can fill confident that will have the opportunity to share that file with others.</p>
+        </div>
+
+        </div>
+
+      <a href="https://invis.io/EPOXQ8149A3" target="_blank" class="button">View Prototype</a>
+
+      <section data-aos="fade-up" class="what-learned">
+        <div class="what-learned_txt">
+          <h2>What I learned</h2>
+          <p>This project was an excellent experience. At the beginning of the project, and while it was progressing, one of the things that was difficult to me was to <strong>see the whole picture:</strong> I could not grasp how one process would connect to the other, but now at the conclusion of the project, I can <strong>clearly see how all the pieces fit together, and anchor the project through the use of a stablish process in a good user experience.</strong> I also learned to “trust the process”, not just make decisions based on what I think looks good or feels right, but to <strong>consult the user at any stage of the project,</strong> and see if it’s usable to them.</p><br>
+          <p>One of the things that surprised me during the testing phase was how I need to <strong>always keep in mind the user:</strong> Just because I know how something was designed or works, that does not mean the user will understand it easily.</p><br>
+          <p>Given more time, I would have liked to research a bit more the competition and also to spend more time testing other components of the design. I also would like to develop an app as a companion to the website. Even though I think </strong>this product delivers to the end user and the client,</strong> I believe that it could be improved further in future iterations.</p>
+        </div>
       </section>
 
       <!-- activate later, when I have more than 1 proyect
@@ -506,19 +809,28 @@
         <img src="./media/images/project-2.jpg" alt="Read About Project 2">
       </section2 -->
 
-      <footer class="grid-1">
-        <p class="fine-print"><a href="#back-to-top">Back to Top</a></p>
-        <h2>Let's Talk</h2>
-        <ul>
-          <li><img src="./media/images/icons8-linkedin-480.png" alt="Connect with me via LinkedIn"/></a></li>
-          <li><img src="./media/images/icons8-github-512.png" alt="Connect with me via GitHub"/></li>
-          <li><img src="./media/images/icons8-twitter-480.png" alt="Connect with me via Twitter"/></li>
-          <li><img src="./media/images/icons8-instagram-500.png" alt="Connect with me via Instagram"/></li>
-          <li><img src="./media/images/icons8-pinterest-500.png" alt="Connect with me via pinterest"/></li>
-        </ul>
-        <p class="fine-print">&copy; 2019. Designed and hand coded by Efren Castillo</p>
+      <footer>
+        <div class="footer-btp">
+        <!-- <p class="fine-print"><a href="#back-to-top">Back to Top</a></p> -->
+          <h2>Let's Talk</h2>
+          </div>
+          <div class="social-icons">
+          <ul>
+            <li><img src="./media/images/icons8-linkedin-480.png" alt="Connect with me via LinkedIn"/></a></li>
+            <li><img src="./media/images/icons8-github-512.png" alt="Connect with me via GitHub"/></li>
+            <li><img src="./media/images/icons8-twitter-480.png" alt="Connect with me via Twitter"/></li>
+            <li><img src="./media/images/icons8-instagram-500.png" alt="Connect with me via Instagram"/></li>
+            <li><img src="./media/images/icons8-pinterest-500.png" alt="Connect with me via pinterest"/></li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2019. Designed and hand coded by Efren Castillo</p>
+        </div>
       </footer>
 
     </div>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
