@@ -79,6 +79,7 @@ h2 {
   text-align: left;
   grid-column-start: 2;
   grid-column-end: 3;
+  margin-bottom: 2rem;
 }
 
 h3 {
@@ -99,6 +100,36 @@ h4 {
   font-weight: bold;
   line-height: 45px;
   text-transform: uppercase;
+}
+
+span.red-circle {
+	font-size: 1.5rem;
+  background: red;
+  border-radius: 0.5em;
+  -moz-border-radius: 0.8em;
+  -webkit-border-radius: 0.8em;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.6em;
+  /* margin-right: 5px; */
+  text-align: center;
+  width: 1.6em;
+}
+
+span.green-circle {
+	font-size: 1.5rem;
+  background: LimeGreen;
+  border-radius: 0.5em;
+  -moz-border-radius: 0.8em;
+  -webkit-border-radius: 0.8em;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.6em;
+  /* margin-right: 5px; */
+  text-align: center;
+  width: 1.6em;
 }
 
 /* only for mobile, because hard return*/
@@ -187,10 +218,19 @@ a {
   margin: 1.5rem 0;
 }
 
+.wireframes-images img + p {
+  margin-bottom: 5rem;
+}
+
+.preference-a h4{
+  margin-top: 4rem;
+}
+
 #fig {
-  color: red;
+  color: grey;
   font-size: 1.4rem;
-  margin: 1.5rem 0;
+  margin-top: .5rem;
+  margin-bottom: 3rem;
 }
 
 .branding h4 {
@@ -449,7 +489,7 @@ a:active {
   grid-column-start: 1;
   grid-column-end: 4;
   background-color: #073443;
-  margin-bottom: 25px;
+  margin-bottom: 5rem;
   padding-bottom: 10px;
   padding-top: 12rem;
 }
@@ -477,6 +517,7 @@ a:active {
   grid-column-end: 4;
   background-color: #D0DEE8; /* light blue */
   margin-top: 5rem;
+  margin-bottom: 2rem;
   padding: 50px 0;
 }
 
@@ -694,7 +735,7 @@ th {
 }
 
 .wireframes-images {
-  margin-top: 8rem;
+  margin-top: 4rem;
   grid-column-start: 1;
   grid-column-end: 4;
   display: grid;
@@ -719,6 +760,11 @@ th {
 .sketch-4 {
   grid-column-start: 2;
   grid-column-end: 3;
+}
+
+.wireframes-images h4 {
+  grid-column-start: 2;
+  grid-column-end: 4;
 }
 
 .white {
@@ -778,7 +824,7 @@ th {
 .jumbotron {
   grid-column-start: 2;
   grid-column-end: 3;
-  margin-top: 10rem;
+  margin-top: 4rem;
 }
 
 .high-prototype {
@@ -874,20 +920,22 @@ footer {
 
 .footer-btp {
   grid-column-start: 2;
-  grid-column-end: 4;
+  grid-column-end: 3;
 }
 
 .footer-btp a, .footer-btp h2 {
   padding-top: 3rem;
   color: white;
   text-align: center;
+  justify-self: center;
 }
 
 .social-icons {
   grid-column-start: 2;
-  grid-column-end: 4;
+  grid-column-end: 3;
   /* align-self: center; */
-  text-align: center;
+  /* text-align: center; */
+  justify-self: center;
 }
 
 .social-icons img {
