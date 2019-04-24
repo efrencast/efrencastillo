@@ -1,8 +1,7 @@
 @media screen and (min-width: 768px) {
 	.wrapper {
     grid-template-columns: 40px auto 40px;
-	  /* background-color: teal; */
-	  }
+	 }
 
     .my-intro {
       padding-top: 40rem;
@@ -19,7 +18,24 @@
       text-align: center;
       justify-self: center;
     }
-	}
+
+		.banner-bio-img {
+		  grid-column-start: 3;
+		  grid-column-end: 10;
+		  align-self: left;
+		  place-self: left;
+		}
+
+		.bio {
+		  display: grid;
+		  grid-column-start: 2;
+		  grid-column-end: 8;
+		  margin-top: 8rem;
+		  margin-bottom: 8rem;
+		  grid-template-columns: minmax(100px, 720px);
+		}
+
+}
 
 
 
@@ -908,31 +924,11 @@ hr {
   grid-column-end: 3;
 }
 
-
 /* biography */
-
-.banner-bio {
-  background-color: #073443;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto;
-  grid-column-start: 1;
-  grid-column-end: 13;
-  padding-top: 20rem;
-  padding-bottom: 10rem;
-  margin-bottom: 0rem;
-}
 
 .banner-bio-img {
   grid-column-start: 3;
   grid-column-end: 6;
-  align-self: center;
-  place-self: center;
-}
-
-.banner-bio-img h3 {
-  color: white;
-  line-height: 4.5rem;
 }
 
 .banner-bio-txt {
@@ -941,14 +937,6 @@ hr {
   grid-row-start: 1;
   align-self: center;
   place-self: center;
-}
-
-.banner-bio-txt img {
-    width: 60%;
-}
-
-.banner-bio-txt p {
-  text-align: left;
 }
 
 .bio {
@@ -960,23 +948,9 @@ hr {
   grid-template-columns: minmax(100px, 720px);
 }
 
-.bio p {
-  font-size: 2.2rem;
-  line-height: 3.5rem;
-}
-
-.bio h4 {
-  margin-top: 4rem;
-  margin-bottom: 1.5rem;
-  line-height: 3.5rem;
-}
-
-.bio br {
-  margin-bottom: 2rem;
-}
 
 
-
+/* end biography */
 
 /* footer */
 
