@@ -476,7 +476,7 @@ a:active {
   grid-column-start: 2;
   grid-column-end: 3;
   text-align: center;
-  padding: 12rem 0;
+  padding: 5rem 0;
 }
 
 .my-process p {
@@ -639,6 +639,19 @@ margin-bottom: 5rem;
 .percentages .right {
   grid-column-start: 3;
   grid-column-end: 4;
+  align-self: start;
+}
+
+.percentages .fix-center {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  align-self: start;
+}
+
+.percentages .fix-left {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
   align-self: start;
 }
 

@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async src="https://www.googletagmanager.com/gtag/js?id=UA-139314064-1">
+    </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-139314064-1');
+    </script>
     <meta charset="utf-8">
     <meta name="author" content="Efren Castillo">
     <meta name="description" content="This is the porfolio of Efren Castillo">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Efren Castillo | Product Designer</title>
+    <title>Efren Castillo | UX and Visual Designer</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/styles.css">
@@ -67,7 +77,7 @@
           <ul>
             <li>Project brief</li>
             <li>Technical specifications</li>
-            <li>Timeline</li>
+            <!-- <li>Timeline</li> -->
           </ul>
         </div>
         <div class="process-img-2">
@@ -202,9 +212,9 @@
       <!-- percentages -->
       <section class="percentages">
         <p class="left"><span>51%</span> Use for personal or professional reasons.</p>
-        <p class="center"><span>52%</span> Create documents and spreadsheets.</p>
+        <p class="center fix-center"><span>52%</span> Create documents and spreadsheets.</p>
         <p class="right"><span>100%</span> Collaborate by sharing a link.</p>
-        <p class="left"><span>38%</span> Organize content by categories, tags or folders.</p>
+        <p class="left fix-left"><span>38%</span> Organize content by categories, tags or folders.</p>
         <p><span>71%</span> Collaborate with families or co-workers.</p>
         <p class="right"><span>71%</span> Upload and stores videos or files.</p>
       </section>
@@ -479,13 +489,13 @@
 
       <!-- wireframes -->
       <section class="wireframes">
-        <h3>Wireframes Design and Testing</h3>
+        <h3>Wireframes and Testing</h3>
         <p>Finalized the user flows, it was <strong>time to start putting the research into a design.</strong> I first sketched the different screens on paper and drew them on the computer. After all the screens were done, I <strong>performed the first usability test to see how this attempt performed.</strong></p>
       </section>
       <!-- end wireframes -->
 
       <section class="jumbotron">
-        <img src="../media/images/user-flows-hand-drawn.jpg" class="high-prototype-picture" alt="Cloudspring Dashboard image showing All Files">
+        <img src="../media/images/wireframes-hand-drawn.jpg" class="high-prototype-picture" alt="Cloudspring Dashboard image showing All Files">
         <p id="fig">Fig. Dashboard showing "All Files"</p>
       </section>
 
@@ -531,7 +541,7 @@
 
       <!-- wireframe changes -->
       <section class="wireframes-changes">
-        <h3>Changes Made After the Usability Test</h3>
+        <h3>Usability Testing: Round 1</h3>
         <p>It was a challenge to see the user picking apart the design. <strong>In some cases the accomplished the task I handed to them,</strong> and in some other cases, <strong>they just got stuck</strong> (Like in the where a user was trying to log in for the first time with his password). I listened closely and watched them, and iterated on the design to remove these friction points.</p>
       </section>
       <!-- end wireframe changes -->
@@ -609,7 +619,7 @@
       <!-- end side litte image -->
 
       <section class="high-prototype">
-        <h3>High Fidelity Prototype Design</h3>
+        <h3>High Fidelity Prototype</h3>
         <p>To <strong>implement the findings of the usability test,</strong> and to apply the branding, I created a high fidelity prototype of the app that I could further test with users.</p><br>
         <p>One of the challenges I had to overcome during the low-fi prototype was the way I designed the prototype was a bit confusing to the user because there were so many screens if the user made an unexpected decision, the next screen could be something that they were not expecting. I overcame this issue by re-assembling the prototype and made the flow simpler and linear.</p>
       </section>
@@ -645,7 +655,7 @@
       <hr>
 
       <section  class="high-prototype-changes">
-        <h3>Changes Made After the High Fidelity Prototype Usability Test</h3>
+        <h3>Usability Testing: Round 2</h3>
         <p>To discover what was working after some iteration of the design, I performed a series of usability test on the high fidelity prototype. I conducted 2 remote testings over Skype and 1 in-person test. Following, the changes implemented:</p>
       </section>
 
@@ -697,7 +707,7 @@
         <hr>
 
       <section class="remote-test">
-        <h3>High Fidelity Prototype Remote Test</h3>
+        <h3>Usability Testing: Round 3</h3>
         <p>Supplementary to the previous user testing, I conducted a remote usability test to <strong>validate that the user could complete different tasks on their own.</strong> After the test, I found out that all the given tasks evaluated to more than 90% success. However, I discovered that during the “create document mission”, <strong>users were having difficulty in closing the document <span class="red-circle">A</span>.</strong> I implemented a change by adding an “X” to facilitate that action <span class="green-circle">B</span>.</p>
       </section>
 
@@ -756,7 +766,7 @@
       </div>
 
       <section class="preference-test">
-        <h3>Prototype Preference Test</h3>
+        <h3>Preference Test</h3>
         <p>Before releasing the prototype for another round of tests, I performed a preference test on 3 components. This is where I had to listen to the user when they decided that icons on the sidebar made for a better experience (Refer to "Icons on Sidebar").</p>
       </section>
 
@@ -766,13 +776,13 @@
 
         <div class="preference-a">
           <h4>Icons on Sidebar</h4>
-          <img src="../media/images/preference-test-1a.jpg"  alt="Branding">
+          <img src="../media/images/preference-test-1b.jpg"  alt="Branding">
           <p><span class="approved">83%</span> Preferred sidebar with icons.</p>
         </div>
 
         <div class="preference-b">
           <h4 class="white">Make white</h4>
-        <img src="../media/images/preference-test-1b.jpg" alt="Branding">
+        <img src="../media/images/preference-test-1a.jpg" alt="Branding">
         <p><span>17%</span> Preferred sidebar with no icons.</p>
         </div>
 
@@ -782,13 +792,13 @@
         <div class="preference-a">
           <h4>Selecting an Item</h4>
           <img src="../media/images/preference-test-2a.jpg"  alt="Branding">
-          <p><span class="approved">83%</span> Preferred sidebar with icons.</p>
+          <p><span class="approved">54%</span> Preferred feedback of selected item to surround entire icon.</p>
         </div>
 
         <div class="preference-b">
           <h4 class="white">Make white</h4>
         <img src="../media/images/preference-test-2b.jpg" alt="Branding">
-        <p><span>17%</span> Preferred sidebar with no icons.</p>
+        <p><span>46%</span> Preferred feedback of selected item to surround the file name.</p>
         </div>
 
 
@@ -796,13 +806,13 @@
         <div class="preference-a">
           <h4>Picture Placement</h4>
           <img src="../media/images/preference-test-3a.jpg"  alt="Branding">
-          <p><span class="approved">83%</span> Preferred sidebar with icons.</p>
+          <p><span class="approved">53%</span> Preferred icon picture in sidebar.</p>
         </div>
 
         <div class="preference-b">
           <h4 class="white">Make white</h4>
-        <img src="../media/images/preference-test-3b.jpg" alt="Branding">
-        <p><span>17%</span> Preferred sidebar with no icons.</p>
+        <img src="../media/images/preference-test-3c.jpg" alt="Branding">
+        <p><span>40%</span> Preferred icon picture on top-right bar.</p>
         </div>
 
       </section>
@@ -832,7 +842,7 @@
         <div data-aos="fade-up" class="wireframes-changes-grid two-col-pic-txt">
 
         <div class="wireframes-change-1-img margin-low">
-          <img src="../media/images/homepage-video.jpg" alt="Animation of the Homepage">
+          <img src="../media/images/homepage-animation.gif" alt="Animation of the Homepage">
         </div>
 
         <div class="wireframes-change-1-txt">
@@ -841,7 +851,7 @@
         </div>
 
         <div class="wireframes-change-2-img margin-low">
-          <img src="../media/images/new-document.jpg" alt="Animation of a New Document">
+          <img src="../media/images/document-creation.gif" alt="Animation of a New Document">
         </div>
 
         <div class="wireframes-change-2-txt">
@@ -851,7 +861,7 @@
 
 
         <div class="wireframes-change-3-img margin-low">
-          <img src="../media/images/upload-file.jpg" alt="Animation of Uploading a File">
+          <img src="../media/images/file-upload.gif" alt="Animation of Uploading a File">
         </div>
 
         <div class="wireframes-change-3-txt">
@@ -860,7 +870,7 @@
         </div>
 
         <div class="wireframes-change-4-img margin-low">
-          <img src="../media/images/collaboration.jpg" alt="Animation of Collaboration">
+          <img src="../media/images/share-folder.gif" alt="Animation of Collaboration">
         </div>
 
         <div class="wireframes-change-4-txt">
@@ -869,7 +879,7 @@
         </div>
 
         <div class="wireframes-change-5-img margin-low">
-          <img src="../media/images/tagging.jpg" alt="Animation of Tagging">
+          <img src="../media/images/item-tagging.gif" alt="Animation of Tagging">
         </div>
 
         <div class="wireframes-change-5-txt">
@@ -878,7 +888,7 @@
         </div>
 
         <div class="wireframes-change-6-img margin-low">
-          <img src="../media/images/sharing.jpg" alt="Animation of Sharing">
+          <img src="../media/images/share-folder.gif" alt="Animation of Sharing">
         </div>
 
         <div class="wireframes-change-6-txt">
