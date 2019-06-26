@@ -25,35 +25,35 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
-  <body id="back-to-top">
-    <div class="wrapper">
-      <!-- navigation -->
-      <nav class="nav">
-        <div class="nav-logo">
-          <a href="index.html"><img src="./media/images/logo.svg" alt="Efren Castillo Logo" /></a>
-        </div>
-        <div class="nav-links">
-          <ul>
-            <li><a href="./projects/cloudspring.html">Projects</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="media/documents/efrencast-resume.pdf" target="_blank">Resume</a></li>
-            <!-- <li><a href="contact.html">Contact</a></li> -->
-          </ul>
-        </div>
-      </nav>
+  <body>
+    <!-- navigation -->
+    <nav>
+      <div class="nav_logo">
+        <a href="index.html"><img src="./media/images/logo.svg" alt="Efren Castillo Logo"/></a>
+      </div>
+      <div class="nav_links">
+        <ul>
+          <li><a href="./projects/cloudspring.html">Projects</a></li>
+          <li><a href="pages/about.html">About</a></li>
+          <li><a href="media/documents/efrencast-resume.pdf" target="_blank">Resume</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="grip-wrapper">
       <!-- banner -->
       <section class="banner" data-aos="zoom-out">
-        <div class="my-intro">
-          <h3>Hi there!</h3>
+        <div class="banner_txt">
+          <h2>Hi there!</h2>
           <h1>I'm Efren Castillo</h1>
           <p><strong>New York City-based</strong> UX and Visual Designer. Turning challenges
           into <strong>research-based</strong> solutions wrapped in<strong> empathy for the user.</strong></p>
-          <img src="./media/images/caret-down-solid.svg" alt="Click this arrow to seemy latest projects" />
+          <!-- <img src="./media/images/caret-down-solid.svg" alt="Click this arrow to seemy latest projects"/> -->
         </div>
       </section>
-      <!-- below the fold -->
+      <!-- latest -->
       <section class="latest">
-        <h3>Latest Projects</h3>
+        <h2>Latest Projects</h2>
         <p>Some of the latest projects I’ve been working on:</p>
       </section>
       <!-- project 1 -->
@@ -61,8 +61,8 @@
         <div class="project_img">
           <img src="./media/images/cloudspring-laptop.gif" alt="View of cloudspring on a laptop" />
         </div>
-        <div class="project_info">
-          <h6>UX | UI | Branding</h6>
+        <div class="project_txt">
+          <p>UX | UI | Branding</p>
           <h2>Cloudspring</h2>
           <p>Cloud-based file storage and organization tool that facilitates the user to create and collaborate seamlessly.</p>
           <a href="./projects/cloudspring.html" class="button">Read Case Study</a>
@@ -73,39 +73,37 @@
         <div class="project_img">
           <img src="./media/images/blocjams-interface.gif" alt="View of Bloc Jams interface" />
         </div>
-        <div class="project_info">
-          <h6>Javascript | JQuery</h6>
-          <h2>Bloc Jams</h2>
+        <div class="project_txt">
+          <p>Javascript | JQuery</p>
+          <h2>Bloc&nbsp;Jams</h2>
           <p>A starter project for Bloc's jQuery-driven music player app.</p>
           <a href="https://efrencast.github.io/bloc-jams-jquery/" class="button">Visit Website</a>
         </div>
       </section>
       <!-- my process -->
-      <section class="my-process">
+      <section class="margin my-process">
         <h2>My Process</h2>
         <p>Whenever I start a project, and particularly when I approach the design part of it, I always ask myself: <strong>“How can I design this interface in a way that is easy to use?”</strong>
         My process includes time to think about usability and how the end-user would interact with the product being designed.</p>
       </section>
       <!-- footer -->
       <footer>
-        <div class="footer-btp">
-        <!-- <p class="fine-print"><a href="#back-to-top">Back to Top</a></p> -->
-          <h2>Let's Talk</h2>
+        <div class="footer_txt">
+          <a href="pages/contact.html"><h2>Let's Talk</h2></a>
         </div>
-        <div class="social-icons">
-          <ul>
-            <li><a href="https://www.linkedin.com/in/efrencast" target="_blank"><img src="./media/images/icons8-linkedin-480.png" alt="Connect with me via LinkedIn"/></a></li>
-            <li><a href="https://github.com/efrencast" target="_blank"><img src="./media/images/icons8-github-512.png" alt="Connect with me via GitHub"/></a></li>
-            <li><a href="https://twitter.com/efrencast" target="_blank"><img src="./media/images/icons8-twitter-480.png" alt="Connect with me via Twitter"/></a></li>
-            <li><a href="https://www.instagram.com/efrenfcast" target="_blank"><img src="./media/images/icons8-instagram-500.png" alt="Connect with me via Instagram"/></a></li>
-            <li><img src="./media/images/icons8-pinterest-500.png" alt="Connect with me via pinterest"/></li>
-          </ul>
+        <div class="footer_icons">
+          <i class="fab fa-linkedin fa-4x"></i>
+          <i class="fab fa-github fa-4x"></i>
+          <i class="fab fa-twitter fa-4x"></i>
+          <i class="fab fa-instagram fa-4x"></i>
+          <i class="fab fa-behance-square fa-4x"></i>
         </div>
-        <div class="copyright">
+        <div class="footer_copyright">
           <p>&copy; 2019. Designed and hand coded by Efren Castillo</p>
         </div>
       </footer>
     </div>
+    <!-- script for animation -->
     <script>
       AOS.init();
     </script>
