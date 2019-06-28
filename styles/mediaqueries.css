@@ -616,6 +616,10 @@ hr {
   max-width: 1200px;
 }
 
+video {
+  margin-top: 0rem;
+}
+
 /* navigation */
 
 .nav_logo {
@@ -1073,15 +1077,16 @@ hr {
 /* footer */
 
 footer {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   padding: 8rem 3rem;
   margin: 0 auto;
 }
 
-.footer_txt {
+/* .footer_txt {
   margin-left: 5rem;
-}
+} */
 
 .footer_txt h2 {
   margin-bottom: 0rem;
@@ -1089,12 +1094,12 @@ footer {
 }
 
 .footer_icons {
-  margin-left: 7rem;
+  text-align: left;
 }
 
-.footer_copyright {
+/* .footer_copyright {
   margin-left: 10rem;
-}
+} */
 
 .footer_copyright p {
   margin-top: 0rem;

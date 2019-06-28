@@ -232,6 +232,7 @@ hr {
 video {
   width: 100%;
   border: 1px solid #C0C0C0;
+  margin-top: 5rem;
 }
 
 /* navigation */
@@ -537,6 +538,10 @@ nav {
 
 .analysis {
   margin: 0 2.5rem 6rem 2.5rem;
+}
+
+.analysis_intro {
+  margin: 0 2.5rem;
 }
 
 .analysis-grid img {
@@ -970,6 +975,10 @@ footer {
 
 .footer_icons {
   text-align: center;
+}
+
+.footer_icons a {
+  font-weight: normal;
 }
 
 .fab {
