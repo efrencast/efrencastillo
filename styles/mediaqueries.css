@@ -46,6 +46,10 @@ h5 {
   margin: 10rem auto;
 }
 
+.button-btp {
+  margin: 4rem 20rem 0 20rem;
+}
+
 .takeaways {
   max-width: 700px;
   margin: 0 auto;
@@ -275,9 +279,10 @@ h5 {
 
 /* brief */
 
-.brief {
+/* hide to test */
+/* .brief {
   margin-bottom: 6rem;
-}
+} */
 
 /* grid for "brief specs" */
 .brief_specs {
@@ -314,7 +319,7 @@ h5 {
 .research {
   margin: 0 auto;
   max-width: 560px;
-  padding-bottom: 6rem;
+  /* padding-bottom: 6rem; hide to test */
 }
 
 /* analysis */
@@ -337,6 +342,10 @@ h5 {
   margin-bottom: 3rem;
 }
 
+.icloud-txt p {
+  margin-bottom: 0rem;
+}
+
 /* personas */
 
 .user-personas {
@@ -354,10 +363,12 @@ h5 {
 
 .persona-1 {
   margin-right: 4rem;
+  flex: 1;
 }
 
 .persona-2 {
   margin-left: 4rem;
+  flex: 1;
 }
 /* stories */
 
@@ -536,7 +547,7 @@ h5 {
 .product-highlights-explanation {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-bottom: 20rem;
+  /* margin-bottom: 20rem; */
 }
 
 .product-highlights-explanation-img {
@@ -553,6 +564,19 @@ h5 {
 
 .product-highlights-explanation h4 {
   margin-top: 0rem;
+}
+
+/*******************************
+******************* Contact ***
+********************************/
+
+.banner-contact {
+  padding-top: 15rem;
+}
+
+.contact-form {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
 
 } /* end of @media screen 640px */
@@ -586,6 +610,10 @@ h2 {
 
 .button {
 	padding: 2rem;
+}
+
+.button-btp {
+  margin: 4rem 45rem 0 45rem;
 }
 
 hr {
