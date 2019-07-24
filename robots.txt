@@ -1,2 +1,4 @@
+Sitemap: https://efrencastillo.design/sitemap.xml
+
 User-agent: *
-Disallow: 
+Disallow:
