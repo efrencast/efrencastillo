@@ -494,6 +494,20 @@ just for appearance; change whatever you want
 }
 
 /****************************
+******************* Projects ***
+*****************************/
+
+.banner-standard {
+  padding-top: 10rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.banner-standard h3 {
+  text-align: center;
+}
+
+/****************************
 ******************* About ***
 *****************************/
 
