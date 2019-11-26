@@ -379,7 +379,7 @@ nav {
 }
 
 .project-2 {
-  background-color: #A05E8B;
+  background-color: #144E90;
 }
 
 /* my process */
@@ -397,6 +397,100 @@ nav {
 
 .my-process p {
   text-align: center;
+}
+
+.my-process-definition {
+  padding: 0 6rem;
+}
+
+.my-process-definition h4 {
+  text-align: center;
+}
+
+.my-process-definition p {
+  text-align: center;
+}
+
+.my-process-definition img {
+  margin: 1rem auto;
+  width: 15%;
+  text-align: center;
+  display: block;
+  /* margin: 6rem 2.5rem 0 2.5rem; */
+}
+
+.my-process-definition-box {
+  margin: 4rem 0;
+  padding-bottom: 4rem;
+  border-bottom: 1px grey solid;
+}
+
+/* testimonials *****************************************/
+
+/*Efren's styles*/
+
+.testimonials {
+  text-align: center;
+  /* margin-bottom: 5rem; */
+  background-color: #F2F2F2;
+  /* margin: 10rem 0; */
+  padding: 10rem 0;
+}
+
+/*
+essential styles:
+these make the slideshow work
+*/
+#slides{
+	position: relative;
+	height: 150px;
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+  /* margin-bottom: 10rem; */
+}
+
+.slide{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	z-index: 1;
+
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
+.showing{
+	opacity: 1;
+	z-index: 2;
+}
+
+/*
+non-essential styles:
+just for appearance; change whatever you want
+*/
+
+.slide{
+	font-size: 1.5rem;
+	padding: 40px;
+	box-sizing: border-box;
+	background: #333;
+	color: #fff;
+  background-color: #F2F2F2;
+}
+
+#slides li {
+  color: #000000;
+  font-family: 'Poppins', 'sans serif';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
 }
 
 /****************************
@@ -993,6 +1087,44 @@ input[type=submit]:hover {
   background-color: #073443;
   border: .1rem solid #073443;
   color: #FFFFFF;
+}
+
+/* read next */
+
+.read-next {
+  text-align: center;
+  /* margin: 10rem 0; */
+}
+
+.read-next h4 {
+  padding: 5rem 0;
+}
+
+.read-next-box h4 {
+  padding: 1rem 0;
+}
+
+.read-next-boxes {
+  margin-bottom: 4rem;
+}
+
+.read-next-box {
+  border: solid #D0DEE8 .25rem;
+  margin: 1rem 2rem;
+  padding: 5rem 2rem;
+  /* background: linear-gradient(lightblue, white); */
+  /* background: url("../media/images/stacks-homepage.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%; */
+}
+
+.read-next-boxes img {
+  width: 90%;
+}
+
+.read-next-box:hover {
+  background-color: #D0DEE8;
 }
 
 /* footer */
