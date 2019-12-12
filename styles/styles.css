@@ -579,6 +579,12 @@ just for appearance; change whatever you want
 .grip-wrapper .project-cloudspring {
   padding-top: 10rem;
   background-color: #073443;
+  background-color: #323943;
+}
+
+.grip-wrapper .project-stacks {
+  padding-top: 10rem;
+  background-color: #323943;
 }
 
 .project-banner_img img {
@@ -1123,7 +1129,7 @@ input[type=submit]:hover {
 }
 
 .read-next-box {
-  border: solid #D0DEE8 .25rem;
+  border: solid #073342 .1rem;
   margin: 1rem 2rem;
   padding: 5rem 2rem;
   /* background: linear-gradient(lightblue, white); */
@@ -1131,6 +1137,7 @@ input[type=submit]:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 70%; */
+
 }
 
 .read-next-boxes img {
@@ -1138,7 +1145,7 @@ input[type=submit]:hover {
 }
 
 .read-next-box:hover {
-  background-color: #D0DEE8;
+  background-color: #FF493C;
 }
 
 /* footer */
