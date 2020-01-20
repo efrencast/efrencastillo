@@ -600,11 +600,17 @@ just for appearance; change whatever you want
   padding-top: 10rem;
   background-color: #073443;
   background-color: #323943;
+  background-color: #7FAACA;
 }
 
 .grip-wrapper .project-stacks {
   padding-top: 10rem;
   background-color: #323943;
+}
+
+.grip-wrapper .project-busybus {
+  padding-top: 10rem;
+  background-color: #144E90;
 }
 
 .project-banner_img img {
