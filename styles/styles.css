@@ -518,13 +518,18 @@ just for appearance; change whatever you want
 *****************************/
 
 .banner-standard {
+  background-image: linear-gradient(-90deg, #4bf19f, #53c2b4);
   padding-top: 10rem;
   padding-bottom: 2rem;
   text-align: center;
+  
 }
 
 .banner-standard h3 {
+  padding-top: 5rem;
   text-align: center;
+  color: #ffffff;
+
 }
 
 /****************************
@@ -537,10 +542,10 @@ just for appearance; change whatever you want
   padding-bottom: 2rem;
 }
 
-.banner-bio_txt h3 {
+/* .banner-bio_txt h3 {
   margin: 2rem 3rem 2rem 3rem;
   text-align: center;
-}
+} */
 
 .banner-bio_img img {
   width: 100%;

@@ -136,6 +136,7 @@ h5 {
 
 .banner-standard {
   padding-top: 20rem;
+  height: 52.5rem;
 }
 
 /****************************
@@ -764,22 +765,23 @@ video {
 *****************************/
 
 .banner-bio_img {
-	max-width: 60%;
-	padding-left: 13.5rem;
+	max-width: 47%;
+	/* padding-left: 13.5rem; */
+  margin: 0 auto;
 }
 
-.banner-bio {
+/* .banner-bio {
 	display: flex;
 	align-items: center;
-}
+} */
 
-.banner-bio_txt h3 {
+/* .banner-bio_txt h3 {
 	text-align: left;
 }
 
 .banner-bio_txt{
 	padding: 0 2rem 0 0rem;
-}
+} */
 
 .bio-story {
   margin: 5rem auto;
