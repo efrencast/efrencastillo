@@ -92,6 +92,21 @@ h5 {
   margin-right: 4rem;
 }
 
+/* styling the last element */
+.nav_links li:last-child a {
+  color: #063443;
+  border: 1px solid #063443;
+  padding: .5rem 2rem;
+}
+
+/* hover to style the last element */
+.nav_links li:last-child a:hover {
+  background-color: #ff493d;
+  color: #FFFFFF;
+  border: 1px solid #ff493d;
+}
+
+
 /* banner */
 
 .banner {
@@ -590,7 +605,9 @@ h5 {
 ********************************/
 
 .banner-contact {
-  padding-top: 15rem;
+  margin-top: 0rem;
+  margin: 0 2rem;
+  margin-bottom: 0rem;
 }
 
 .contact-form {
@@ -761,27 +778,23 @@ video {
 }
 
 /****************************
+******************* Contact ***
+*****************************/
+
+.contact-form {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  padding: 0 15rem;
+}
+
+/****************************
 ******************* About ***
 *****************************/
 
 .banner-bio_img {
 	max-width: 47%;
-	/* padding-left: 13.5rem; */
   margin: 0 auto;
 }
-
-/* .banner-bio {
-	display: flex;
-	align-items: center;
-} */
-
-/* .banner-bio_txt h3 {
-	text-align: left;
-}
-
-.banner-bio_txt{
-	padding: 0 2rem 0 0rem;
-} */
 
 .bio-story {
   margin: 5rem auto;
